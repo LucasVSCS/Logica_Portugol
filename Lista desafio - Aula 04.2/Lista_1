@@ -1,0 +1,21 @@
+algoritmo "0_20"
+// Função : Conta de 0 a 20
+// Autor : Lucas Vinicius
+// Data : 27-Sep-17
+// Seção de Declarações
+var
+
+num: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa conta de zero até vinte")
+
+//Laço de repetição
+enquanto (num<21) faca
+   escreval (num)
+   num <- num + 1
+fimenquanto
+
+fimalgoritmo
