@@ -1,0 +1,51 @@
+algoritmo "Calculo_Salario"
+// Função : Cálculo Salário família e salário bruto
+// Autor : Lucas Vinicius
+// Data : 21/09/2017
+// Seção de Declarações
+var
+
+sl_hora, hr_trabalhadas, qtnd_filhos, sl_bruto, sl_fm: real
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("    Este programa calcula o salário família e o salário bruto de acordo os dados")
+escreval ("----------------------------------------------------------------------------------")
+
+//Entrada de dados
+
+//Recebe o valor do salário hora do usuário
+escreval ("Digite o valor do seu salário hora : ")
+   leia (sl_hora)
+//Recebe a quantidade de horas trabalhadas do usuário
+escreval ("Digite a quantidade horas trabalhadas: ")
+   leia (hr_trabalhadas)
+//Recebe a quantidades de filhos menores de 14 anos que o usuário possui
+escreval ("Digite a sua quantidade de filhos abaixo de 14 anos: ")
+   leia (qtnd_filhos)
+
+//Processamento de dados
+
+//Fórmula para calcular o salário bruto
+sl_bruto <- sl_hora * hr_trabalhadas
+
+//É calculado o salário família em R$10,50 caso o salário bruto seja menor ou igual a R$500
+se (sl_bruto <= 500) entao
+   sl_fm <- 10.5*qtnd_filhos
+senao
+     //É calculado o salário família em R$6,50 caso o salário bruto seja maior que R$500 e menor ou igual a R$1000
+   se (sl_bruto > 500) e (sl_bruto <= 1000) entao
+      sl_fm <- 6.5*qtnd_filhos
+   senao
+         //É calculado o salário família em R$1,50 caso o salário bruto seja maior que R$1000
+      sl_fm <- 1.5*qtnd_filhos
+   fimse
+fimse
+
+//Saida de dados
+
+escreval ("O seu salario bruto é de: ", sl_bruto) //Mostra na tela o salário bruto do usuário
+escreval ("O seu salario familia é de: ",sl_fm)   //Mostra na tela o salário família do usuário
+
+fimalgoritmo
