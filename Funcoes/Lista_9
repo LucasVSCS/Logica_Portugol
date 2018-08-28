@@ -1,0 +1,38 @@
+algoritmo "dolar_reais"
+// Função : Recebe um valor em reais digitado usuário, a cotação e converte em dolares
+// Autor : Lucas Vinicius
+// Data : 13/11/2017
+
+//Sub-rotina do tipo procedimento para requisitar a quantidade de reais digitada pelo usuário, a cotação e mostrar o resultado final na tela
+procedimento resultado()
+var
+reais, cotacao: real
+inicio
+escreval ("Digite o valor em reais: ")
+//Recebe a quantidade de reais pelo usuário
+leia (reais)
+escreval ("Digite o valor da cotação: ")
+//Recebe a cotação digitada pelo usuário
+leia (cotacao)
+//Mostra na tela o resultado final da conversão
+escreval ("O seu valor em dinheiro, convertido em dolares é de: ", calculo(reais, cotacao):2:2)
+fimprocedimento
+
+//Sub-rotina do tipo de função para converter o valor em dolares para reais de acordo com a cotação e retornar o valor
+funcao calculo(reais, cotacao: real): real
+var
+dolar: real
+inicio
+dolar <- reais / cotacao
+retorne dolar
+fimfuncao
+
+var
+//Programa principal para chamar o procedimento
+inicio
+escreval ("Este programa recebe um valor em reais digitado usuário, a cotação e converte em")
+escreval ("dolares")
+escreval
+//Comando para requisitar(chamar) o procedimento
+resultado()
+fimalgoritmo
