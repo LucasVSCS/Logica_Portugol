@@ -1,0 +1,49 @@
+algoritmo "Conceito_media"
+// Função : Lê três notas, calcula a média e apresenta um conceito conforme seu valor
+// Autor : Lucas Vinicius
+// Data : 23-Sep-17
+// Seção de Declarações
+var
+
+nota, soma, media: real
+cont: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê três notas, calcula a média e apresenta um conceito conforme seu valor")
+
+//Entrada de dados
+//Repetidor para armazenar as notas do usuario
+cont <- 1
+enquanto (cont <=3) faca
+   escreval ("Digite a sua nota: ")
+   leia (nota)
+   soma <- nota + soma     //Contador para armazenar a soma das notas do usuário
+   cont <- cont+1
+fimenquanto
+
+//Processamento de dados
+//Operação para tirar a média do usuário com base na soma das notas
+media <- soma/3
+
+//Saida de dados
+se (media>=0) e (media<4) entao
+   escreval ("D")    //Caso a média seja entre 0 e 3 mostrar a letra 'D'
+senao
+   se (media>=4) e (media<7) entao
+      escreval ("C")  //Caso a média seja entre 4 e 6 mostrar a letra 'C'
+   senao
+      se (media>=7) e (media<9) entao
+         escreval ("B") //Caso a média seja entre 7 e 8 mostrar a letra 'B'
+      senao
+         se (media>=9) e (media<=10) entao
+            escreval ("A")  //Caso a média seja entre 9 e 10 mostrar a letra 'A'
+         senao
+            escreval ("Média inválida")  //Caso a média digitada não atingir os requisitos necessários mostrar 'Média inválida'
+         fimse
+      fimse
+   fimse
+fimse
+
+fimalgoritmo
