@@ -1,0 +1,44 @@
+algoritmo "num_perfeito"
+// Função : Recebe um número inteiro positivo e retorna verdadeiro caso ele seja perfeito ou falso caso contrario
+// Autor : Lucas Vinicius
+// Data : 06/11/2017
+
+//Sub-rotina do tipo procedimento para receber o número digitado pelo usuário e para mostrar o resultado final na tela
+procedimento mostrar()
+var n:inteiro
+inicio
+escreval ("Digite um número inteiro: ")
+//Recebe o número digitado pelo usuário
+leia (n)
+//Mostra na tela o resultado final
+escreval (perfeito(n))
+fimprocedimento
+
+//Sub-rotina do tipo função para checar se o número é perfeito
+funcao perfeito(n: inteiro): caracter
+var soma, cont: inteiro
+inicio
+para cont de 1 ate n-1 faca
+   se (n mod cont = 0) entao
+      soma <- soma + cont
+   fimse
+fimpara
+//Caso o número seja perfeito retornar a resposta positiva
+se (soma = n) entao
+   retorne "Verdadeiro"
+senao
+   //Caso o número não seja perfeito retornar a resposta negativa
+   retorne "Falso"
+fimse
+fimfuncao
+
+var
+//Programa principal para chamar o procedimento
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa recebe um número inteiro positivo e retorna ''verdadeiro'' caso ele")
+escreval ("seja perfeito ou ''falso'' caso contrario")
+escreval
+//Comando para requisitar(chamar) o procedimento
+mostrar()
+fimalgoritmo
