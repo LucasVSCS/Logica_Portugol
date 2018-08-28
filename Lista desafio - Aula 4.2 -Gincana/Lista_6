@@ -1,0 +1,27 @@
+algoritmo "Modulo"
+// Função : Apresentar o módulo de um número
+// Autor : Lucas Vinicius
+// Data : 24-Sep-17
+// Seção de Declarações
+var
+
+num: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa apresenta o módulo de um número digitado pelo o usuário")
+
+//Entrada de dados
+escreval ("Digite um valor inteiro: ")
+leia (num) //Recebe o valor da variável
+
+//Processamento e saida de dados
+se (num<0) entao
+   //Caso a variável for negativa, ela será multiplicada por menos um
+   escreval ("O módulo do número digitado é: ",num*-1)
+senao
+     //Caso a variável for positiva, apenas mostra na tela
+   escreval ("Não ha alteração, o modulo do seu número é ele mesmo: ",num)
+fimse
+fimalgoritmo
