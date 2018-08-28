@@ -1,0 +1,26 @@
+algoritmo "Tabuada"
+// Função : Lê um número e multiplica de 1 até 10
+// Autor : Lucas Vinicius
+// Data : 01-Oct-17
+// Seção de Declarações
+var
+
+num, cont, mult: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê um número e multiplica de 1 até 10")
+
+//Entrada de dados
+escreval ("Digite um número")
+   leia (num)
+
+//Laço de repetição, processamento e saida de dados
+enquanto (cont<10) faca
+   cont <- cont + 1
+   mult <- num * cont
+   escreval (mult)
+fimenquanto
+
+fimalgoritmo
