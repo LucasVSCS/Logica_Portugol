@@ -1,0 +1,47 @@
+algoritmo "Quadrante_coordenada"
+// Função : Este programa lê as coordenadas dadas pelo usuário e determina a qual quadrante ela pertence
+// Autor : Lucas Vinicius
+// Data : 23-Sep-17
+// Seção de Declarações
+var
+
+x, y: real
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê as coordenadas dadas pelo usuário e determina a qual quadrante ela pertence")
+
+//Entrada de dados
+escreval ("Digite o número de x: ")
+  leia (x) //Recebe o valor da primeira coordenada
+escreval ("Digite o número de y: ")
+  leia (y) //Recebe o valor da segunda coordenada
+  
+//Processamento e saida de dados
+se (x>=1) e (y>=1) entao
+   //Caso x e y sejam positivos o ponto pertence ao primeiro quadrante
+   escreval ("Suas coordenadas pertencem ao primeiro quadrante")
+senao
+   se (x<0) e (y>=1) entao
+      //Caso x seja negativo e y seja positivos o ponto pertence ao segundo quadrante
+      escreval ("Suas coordenadas pertencem ao segundo quadrante")
+   senao
+      se (x<0) e (y<0) entao
+          //Caso x e y sejam negativos o ponto pertence ao terceiro quadrante
+         escreval ("Suas coordenadas pertencem ao terceiro quadrante")
+      senao
+         se (x =0) ou (y=0) entao
+            //Caso x ou y seja igual a 0 o ponto é uma reta
+            escreval ("Suas coordenadas não pertencem a nenhum quadrante, ela é uma reta")
+         senao
+              //Caso x seja positivo e y seja negativo o ponto pertence ao quarto quadrante
+            escreval ("Suas coordenadas pertencem ao quarto quadrante")
+         fimse
+      fimse
+   fimse
+fimse
+
+fimalgoritmo
+
+
