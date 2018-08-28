@@ -1,0 +1,32 @@
+Algoritmo "SUBTRACAO_MULTIPLICACAO_DIVISAO"
+// Professora  : Cheli Mendes
+// Descrição   : 2h-[45/3h-4h(3-h)]^2
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 29-Aug-17
+Var
+
+h, result1, result2, result3, result4, result5, result6, result7, resultado: real
+
+Inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa resolve uma operação matemática")
+
+//Entrada de dados
+escreval ("Digite o valor de h: ")
+   leia (h) //Recebe o valor da variável
+   
+//Processamento de dados
+result1 <- 3-h               //Retirando os parenteses
+result2 <- 4*h
+result3 <- result1 * result2 //Multiplicação entre 4h(3-h)
+result4 <- 45/(3*h)
+result5 <- result4 - result3 //Subtração entre os resultados de 45/3h e 4(3-h)
+result6 <- result5^2         //Elevar os resultados que estavam dentro da chave
+resultado <- 2*h - result6
+
+//Saida de dados
+//Mostra na tela o resultado da operação
+escreval ("Seu resultado é: ", resultado)
+
+Fimalgoritmo
