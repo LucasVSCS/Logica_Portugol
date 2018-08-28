@@ -1,0 +1,37 @@
+algoritmo "Fibonacci"
+// Função : Apresenta a série de Fibonacci até o termo digitado pelo usuário
+// Autor : Lucas Vinicius
+// Data : 13/11/2017
+
+//Sub-rotina do tipo procedimento para calcular e mostrar a série de Fibonacci
+procedimento resultado()
+var
+num1, num2, total, cont, n: inteiro
+inicio
+escreval ("Digite a quantidade de termos: ")
+//Recebe a quantidade de termos da série Fibonacci digitado pelo usuário
+leia (n)
+num1<-1
+cont<-1
+
+//Laço de repetição
+//Processamento e saida de dados
+//Laço para calcular o Fibonacci
+enquanto (cont <= n) faca
+   cont <- cont+1
+   total <- num1+num2
+   num1 <- num2
+   num2 <- total
+   escreva (total)
+fimenquanto
+fimprocedimento
+
+var
+//Programa principal para chamar o procedimento
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa apresenta a série de Fibonacci até o termo digitado pelo usuário")
+escreval
+//Comando para chamar(requisitar) o procedimento
+resultado()
+fimalgoritmo
