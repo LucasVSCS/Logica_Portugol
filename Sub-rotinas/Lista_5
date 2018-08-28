@@ -1,0 +1,41 @@
+algoritmo "Calc_area"
+// Função : Calcula as áreas de 10 círculos e imprime a maior área calculada
+// Autor : Lucas Vinicius
+// Data : 30/10/2017
+
+//Sub-rotina do tipo procedimento para receber o valor dos 10 raios digitados pelo usuário, conferir qual é o maior, e mostrar o resultado final na tela
+procedimento ler_raio()
+var
+raio, maior: real
+cont: inteiro
+inicio
+//Contador para calcular as areas e verificar a maior
+para cont de 1 ate 10 faca
+   escreval ("Digite o valo do raio: ")
+   leia (raio)
+   se (area_circulo(raio) > maior) entao
+      maior <- area_circulo(raio)
+   fimse
+fimpara
+//Imprime na tela o resultado final
+escreval ("A maior area calculada foi de: ", maior:2:2)
+fimprocedimento
+
+//Sub-rotina do tipo função para calcular as areas
+funcao area_circulo(raio:real): real
+var
+area: real
+inicio
+area <- pi * (raio^2)
+retorne area
+fimfuncao
+
+var
+//Programa principal para chamar a sub-rotina do tipo procedimento
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa calcula as áreas de 10 círculos e imprime a maior área calculada")
+escreval
+//Comando para chamar(requisitar) o procedimento
+ler_raio()
+fimalgoritmo
