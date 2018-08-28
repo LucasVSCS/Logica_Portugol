@@ -1,0 +1,37 @@
+algoritmo "Maior_menor"
+// Função : Lê cinco números inteiros e identifica o maior e o menor
+// Autor : Lucas Vinicius
+// Data : 27/09/2017
+// Seção de Declarações
+var
+
+cont, maior, menor, num: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê cinco números inteiros e identifica o maior e o menor")
+
+//Laço de repetição
+para cont de 1 ate 5 faca
+   escreval ("Digite um numero:")
+      leia (num)  //Dentro do laço de repetição, recebe e armazena os números digitados cinco vezes
+   
+   //Condicional para identificar o maior número dentre os digitados
+   se (num > maior) entao
+      maior <- num
+   senao
+     //Condicional para identificar o menor número dentre os digitados
+      se (num < maior) entao
+         menor <- num
+      fimse
+   fimse
+fimpara
+
+//Saida de dados
+//Mostra na tela o maior número dentre os digitados
+escreval ("O maior número dentre os digitados é: ",maior)
+//Mostra na tela o menor número dentre os digitados
+escreval ("O menor número dentre os digitados é: ",menor)
+
+fimalgoritmo
