@@ -1,0 +1,88 @@
+algoritmo "Menu"
+// Função : Oferece um menu ao usuário para ele escolher dentre três opções: multiplicar, somar ou tirar a media de 3 números
+// Autor : Lucas Vinicius
+// Data : 14/11/2017
+
+//Sub-rotina do tipo procedimento para ler e armazenar os números digitado pelo usuário, apresentar o menu, e mostrar o resultado final de acordo com sua escolha
+procedimento menu()
+var
+opcao: inteiro
+num_1, num_2, num_3: real
+inicio
+
+//Armazena o primeiro número digitado pelo usuário
+ escreval ("Digite o primeiro valor: ")
+  leia (num_1)
+  
+ //Armazena o segundo número digitado pelo usuário
+  escreval ("Digite o segundo valor: ")
+   leia (num_2)
+   
+    //Armazena o terceiro número digitado pelo usuário
+     escreval ("Digite o terceiro valor: ")
+      leia (num_3)
+
+//Limpa a tela de comandos
+limpatela
+
+//Mostra na tela o menu de opções ao usuário e solicita que ele escolha uma
+escreval ("Para tirar a MEDIA digite 1")
+escreval ("Para tirar a SOMA digite 2")
+escreval ("Para tirar a MULTIPLICAÇÃO digite 3")
+
+//Lê a opção desejada pelo usuário
+leia (opcao)
+//Caso escolha a primeira opção, chama a função MEDIA e mostra seu resultado final na tela
+se (opcao = 1) entao
+   escreval ("A media é: ", media(num_1, num_2, num_3))
+senao
+   //Caso escolha a segunda opção, chama a função SOMA e mostra seu resultado final na tela
+   se (opcao = 2) entao
+      escreval ("A soma dos números é: ", soma(num_1, num_2, num_3))
+   senao
+      //Caso escolha a terceira opção, chama a função PRODUTO e mostra seu resultado final na tela
+      se (opcao = 3) entao
+         escreval ("O produto dos números é de: ", produto(num_1, num_2, num_3))
+      fimse
+   fimse
+fimse
+fimprocedimento
+
+//Sub-rotina do tipo função para tirar a média dos números digitados pelo usuário e retornar o resultado
+funcao media(num_1, num_2, num_3: real): real
+var
+result_1: real
+inicio
+  result_1 <- (num_1 + num_2 + num_3) /3
+   retorne result_1
+fimfuncao
+
+//Sub-rotina do tipo função para somar os números digitados pelo usuário e retornar o resultado
+funcao soma(num_1, num_2, num_3: real): real
+var
+result_2: real
+inicio
+  result_2 <- num_1 + num_2 + num_3
+   retorne result_2
+fimfuncao
+
+//Sub-rotina do tipo função para multiplicar os números digitados pelo usuário e retornar o resultado
+funcao produto(num_1, num_2, num_3: real): real
+var
+result_3: real
+inicio
+  result_3 <- num_1 * num_2 * num_3
+   retorne result_3
+fimfuncao
+
+var
+//Programa principal para chamar o procedimento
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa oferece um menu ao usuário para que ele escolha dentre três opções:")
+ escreval ("multiplicar, somar ou tirar a media de 3 números")
+  escreval
+
+   //Comando para chamar(requisitar) o procedimento
+    menu()
+fimalgoritmo
