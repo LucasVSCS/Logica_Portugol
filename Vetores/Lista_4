@@ -1,0 +1,29 @@
+algoritmo "Maior_vetor"
+// Função : Lê 5 valores, armazena no vetor e mostra na tela o maior valor
+// Autor : Lucas Vinicius
+// Data : 23/10/2017
+var
+
+cont: inteiro
+num: vetor[1..5] de real
+maior: real
+
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê 5 valores, armazena no vetor e mostra na tela o maior valor")
+
+//Laço de repetição para receber e armazenar o maior valor em uma variavel auxiliar
+para cont de 1 ate 5 faca
+   escreval ("Digite um valor")
+   leia (num[cont])  //Recebe o valor digitado pelo usuário e armazena na posição do contador
+   se (num[cont] > maior) entao
+      maior <- num[cont] //Armazena o maior valor na variavel auxiliar
+   fimse
+fimpara
+
+//Linha para separar informações
+escreval ("----------------------------------------------------------------")
+//Mostra na tela o maior valor digitado
+escreval ("O maior valor dentre os 5 digitador é de: ", maior)
+
+fimalgoritmo
