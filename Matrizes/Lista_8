@@ -1,0 +1,39 @@
+algoritmo "Matriz*3"
+// Função : Lê 8 elementos em uma matriz e constroi uma segunda matriz de mesma dimensão com os elementos da primeira matriz multiplicados por 3
+// Autor : Lucas Vinicius
+// Data : 29/10/2017
+var
+
+matriz_1, matriz_2: vetor[1..5,1..5] de inteiro
+linha, coluna: inteiro
+
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê 8 elementos em uma matriz e constroi uma segunda matriz de mesma")
+escreval ("dimensão com os elementos da primeira matriz multiplicados por 3")
+escreval
+
+//Laço de repetição para receber as 4 colunas e as 2 linhas da primeira matriz
+para linha de 1 ate 2 faca
+   para coluna de 1 ate 4 faca
+      escreval ("Digite o valor da posição [", linha, ",", coluna, "]: ")
+      leia (matriz_1[linha, coluna]) //Recebe a coluna e a linha digitado pelo usuário
+   fimpara
+fimpara
+
+//Laço de repetição para multiplicar a primeira matriz por 3 e armazenar na segunda matriz
+para linha de 1 ate 2 faca
+   para coluna de 1 ate 4 faca
+      matriz_2[linha,coluna] <- matriz_1[linha,coluna]*3
+   fimpara
+fimpara
+
+//Laço de repetição para mostrar a primeira matriz multiplicada por 3
+para linha de 1 ate 2 faca
+   para coluna de 1 ate 4 faca
+      escreva(matriz_2[linha, coluna]:7)
+   fimpara
+   escreval
+fimpara
+
+fimalgoritmo
