@@ -1,0 +1,31 @@
+algoritmo "Inversao_numero"
+// Função : Inverte um número de CDU(Centena, Dezena e Unidade) para UDC(Unidade, Dezena e Centena)
+// Autor :  Lucas Vinicius
+// Data : 19-Sep-17
+var
+
+num, uni, dez, cen : inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("           Este programa realiza a inversão de um número CDU para UDC")
+escreval ("----------------------------------------------------------------------------------")
+
+//Entrada de dados
+escreval ("Digite um numero de três digitos:")
+  leia(num) //Recebe o numero de três digitos fornecido pelo usuario
+  
+//Processamento de dados
+
+uni<-num mod 10 //Resolve a operação para obter a unidade do numero
+
+cen<-num div 100  //Resolve a operação para obter a centena do numero
+
+dez<-(num div 10)-((num div 100)*10)  //Resolve a operação para obter a dezena do numero
+
+//Saida de dados
+//Mostra na tela o numero invertido
+escreval("Seu numero invertido é: ", ((uni*100)+(cen)+(dez*10)))
+
+fimalgoritmo
