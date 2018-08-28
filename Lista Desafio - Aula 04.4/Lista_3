@@ -1,0 +1,22 @@
+algoritmo "10_-5"
+// Função : Mostra na tela os números de 10 até -5
+// Autor : Lucas Vinicius
+// Data : 29-Sep-17
+// Seção de Declarações
+var
+
+num: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa conta de dez até cinco negativo")
+
+//Laço de repetição
+num <- 10
+enquanto (num>-6) faca
+   escreval (num)
+   num <- num - 1
+fimenquanto
+
+fimalgoritmo
