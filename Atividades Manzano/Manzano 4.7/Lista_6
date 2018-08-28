@@ -1,0 +1,50 @@
+algoritmo "Ordem_crescente"
+// Função : Lê três numero e ordena eles em ordem crescente
+// Autor :  Lucas Vinicius
+// Data : 24-Sep-17
+// Seção de Declarações
+var
+
+a, b, c: real
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê três numero e ordena eles em ordem crescente")
+
+//Entrada de dados
+escreval ("Digite o valor para a primeira variavel: ")
+leia (a)  //Recebe o valor da primeira variável
+escreval ("Digite o valor para a segunda variavel: ")
+leia (b)  //Recebe o valor da primeira variável
+escreval ("Digite o valor para a terceira variavel: ")
+leia (c) //Recebe o valor da primeira variável
+
+//Processamento e saida de dados
+//Regras verificadoras para posicionar o número na ordem crescente
+se (b > a) e (c > b) entao
+   escreval (a,b,c)
+senao
+   se (c > b) e (a > b) entao
+      escreval (b,c,a)
+   senao
+      se (a > c) e (b > a) entao
+         escreval (c,a,b)
+      senao
+         se (b > c) e (a > b) entao
+            escreval (c,b,a)
+         senao
+            se (a > b) e (c > a) entao
+               escreval (b,a,c)
+            senao
+               se (c > a) e (b > c) entao
+                  escreval (a,c,b)
+               senao
+                  escreval ("Operação inválida")
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+fimse
+fimalgoritmo
