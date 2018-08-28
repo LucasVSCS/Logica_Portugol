@@ -1,4 +1,4 @@
-# Exercicios de lógica de programação utilizando Portugol
+# :squirrel: Exercicios de lógica de programação utilizando Portugol
 Concluido | Atividade
 ------------ | -------------
 ✔|Atividades Manzano
