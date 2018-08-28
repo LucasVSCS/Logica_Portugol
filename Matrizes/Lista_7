@@ -1,0 +1,49 @@
+algoritmo "Matriz_subtracao"
+// Função : Lê duas matrizes com 20 elementos e constroi uma terceira matriz onde cada elemento é a subtração do elemento correspondente de A com B
+// Autor : Lucas Vinicius
+// Data : 26/10/2017
+var
+
+matriz_1, matriz_2, matriz_3: vetor[1..5 , 1..5] de inteiro
+coluna, linha: inteiro
+
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Lê duas matrizes com 20 elementos e constroi uma terceira matriz onde cada")
+escreval ("elemento é a subtração do elemento correspondente de A com B")
+escreval
+
+//Laço de repetição para receber as 5 colunas e as 4 linhas da primeira matriz
+para coluna de 1 ate 5 faca
+   para linha de 1 ate 4 faca
+      escreval ("Digite o valor da posição [", linha, ",", coluna, "] da primeira matriz: ")
+      leia (matriz_1[linha, coluna]) //Recebe a coluna e a linha digitado pelo usuário
+   fimpara
+fimpara
+//
+escreval ("---------------------------------------------------------------------------------")
+
+//Laço de repetição para receber as 5 colunas e as 4 linhas da segunda matriz
+para coluna de 1 ate 5 faca
+   para linha de 1 ate 4 faca
+      escreval ("Digite o valor da posição [", linha, ",", coluna, "] da segunda matriz: ")
+      leia (matriz_2[linha, coluna]) //Recebe a coluna e a linha digitado pelo usuário
+   fimpara
+fimpara
+
+//Laço de repetição para fazer a subtração da primeira matriz pela segunda e armazena na terceira matriz
+para coluna de 1 ate 5 faca
+     para linha de 1 ate 4 faca
+          matriz_3[linha, coluna]<- matriz_1[linha, coluna] - matriz_2[linha, coluna]
+     fimpara
+fimpara
+
+//Laço de repetição para mostrar na tela a terceira matriz
+para coluna de 1 ate 5 faca
+   para linha de 1 ate 4 faca
+      escreva (matriz_3[linha, coluna]:6)
+   fimpara
+   escreval
+fimpara
+
+fimalgoritmo
