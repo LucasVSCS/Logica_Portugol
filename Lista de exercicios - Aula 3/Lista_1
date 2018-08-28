@@ -1,0 +1,32 @@
+algoritmo "Calculo_media"
+// Função : Calcula a média de 5 notas de um aluno
+// Autor : Lucas Vinicius
+// Data : 19/09/2017
+var
+
+N1, N2, N3, N4, N5, media: real
+
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("           Este programa calcula a média de 5 notas de um aluno")
+escreval ("----------------------------------------------------------------------------------")
+
+//Entrada de dados
+escreval ("Digite o valor da sua primeira nota: ")
+   leia (N1) //Recebe o valor da primeira nota
+escreval ("Digite o valor da sua segunda nota: ")
+   leia (N2) //Recebe o valor da segunda nota
+escreval ("Digite o valor da sua terceira nota: ")
+   leia (N3) //Recebe o valor da terceira nota
+escreval ("Digite o valor da sua quarta nota: ")
+   leia (N4) //Recebe o valor da quarta nota
+escreval ("Digite o valor da sua quinta nota: ")
+   leia (N5) //Recebe o valor da quinta nota
+
+//Processamento de dados
+media <- (N1+N2+N3+N4+N5)/5   //Calculo da média
+
+//Saida de dados
+escreval ("Sua média foi: ", media)  //Mostra na tela o resultado da média
+
+fimalgoritmo
