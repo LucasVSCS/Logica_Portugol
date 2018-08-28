@@ -1,0 +1,27 @@
+Algoritmo "Soma_Divisao"
+// Professora  : Cheli Mendes
+// Descrição   : Soma dois numero e divide o resultado por um terço
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 29-Aug-17
+Var
+
+a, b, resultado: real
+
+Inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa soma dois numeros e divide seu resultado por 3")
+
+//Entrada de dados
+escreval ("Digite o valor de a: ")
+   leia (a)  //Recebe o valor da primeira variável
+escreval ("Digite o valor de b: ")
+   leia (b)  //Recebe o valor da terceira variável
+   
+//Processamento de dados
+resultado <- a + b * ( 1/3 )  //Soma dois numero e divide o resultado por um terço
+
+//Saida de dados
+//Mostra na tela o resultado da operação
+escreval ("O resultado da sua conta é", resultado)
+
+Fimalgoritmo
