@@ -1,0 +1,29 @@
+algoritmo "Numero_perfeito"
+// Função : Gera e escreve os 4 primeiros números perfeitos
+// Autor : Lucas Vinicius
+// Data : 21/10/2017
+
+var
+
+soma, cont: real
+
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa gera e escreve os 4 primeiros números perfeitos")
+
+cont <- 2
+//Laço de repetição
+escreval ("Numero perfeitos em ordem:")
+enquanto (cont<=7) faca
+   soma <- 2^(cont-1)*((2^cont)-1) //Formula para encontrar o numero perfeito
+   escreval (soma) //Mostra na tela o numero perfeito
+   se (cont=2) entao
+      cont <- cont+1
+   senao
+      se (cont>2) entao
+         cont <- cont+2
+      fimse
+   fimse
+fimenquanto
+
+fimalgoritmo
