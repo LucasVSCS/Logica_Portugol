@@ -1,0 +1,41 @@
+algoritmo "Comodos"
+// Função : Este programa calcula as áreas dos cômodos de uma residência e mostra seu total
+// Autor : Lucas Vinicius
+// Data : 02-Oct-17
+// Seção de Declarações
+var
+
+resposta, comodo: caracter
+largura, comprimento, area, soma: real
+
+inicio
+
+//Mostra na tela a funcionalidade
+escreval ("Este programa calcula as áreas dos cômodos de uma residência e mostra seu total")
+
+//Laço de repetição
+//Entrada e processamento de dados
+resposta <- "sim"
+enquanto (resposta= "sim") faca
+   escreval ("Digite o nome do cômodo")
+   leia (comodo) //Recebe o nome do cômodo
+   escreval ("Digite a largura do cômodo")
+   leia (largura)  //Recebe a largura do cômodo
+   escreval ("Digite o comprimento do cômodo")
+   leia (comprimento) //Recebe o comprimento do cômodo
+
+   area <- largura * comprimento //Calcula a área do cômodo
+   soma <- area + soma  //Armazena ás areas do cômodos para chegar ao valor total
+
+   //Mostra
+   escreval ("A aréa da(o)", comodo," é de: ", area)
+   //Interação com o usuário para saber se ele deseja adicionar mais cômodos aos dados
+   escreval ("Deseja continuar? Sim ou não ")
+   leia (resposta)
+fimenquanto
+
+//Saida de dados
+//Mostra na tela área total dos cômodos
+escreval ("O total acumulado da sua área residencial é de: ", soma)
+
+fimalgoritmo
