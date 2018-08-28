@@ -1,0 +1,39 @@
+algoritmo "potencia"
+// Função : Calcula a potência de um número qualquer
+// Autor : Lucas Vinicius
+// Data : 13/11/2017
+
+//Sub-rotina do tipo procedimento para  requisitar a base e o expoente
+procedimento resultado()
+var
+base, expoente: real
+inicio
+escreval ("Digite o valor da base: ")
+//Recebe a base da potência
+leia (base)
+escreval ("Digite o valor do expoente: ")
+//Recebe o expoente da potência
+leia (expoente)
+//Mostra na tela o resultado do programa
+escreval ("O resultado é: ", calculo(base, expoente))
+fimprocedimento
+
+//Sub-rotina do tipo função para calcular o valor da potencia
+funcao calculo(base, expoente:real): real
+var
+result: real
+inicio
+//Calcula a potencia do número
+result <- exp(base, expoente)
+//Retorna o resultado
+retorne result
+fimfuncao
+
+var
+//Programa principal para chamar o procedimento
+inicio
+escreval ("Este programa calcula a potência de um número qualquer")
+escreval
+//Comando para requisitar(chamar) o procedimento
+resultado()
+fimalgoritmo
