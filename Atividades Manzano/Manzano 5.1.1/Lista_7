@@ -1,0 +1,28 @@
+algoritmo "Fibonacci"
+// Função : Apresenta a série de Fibonacci até o 15° termo
+// Autor : Lucas Vinicius
+// Data : 02/10/2017
+// Seção de Declarações
+var
+
+num1, num2, total, cont: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa apresenta a série de Fibonacci até o 15° termo")
+
+num1<-1
+cont<-1
+
+//Laço de repetição
+//Processamento e saida de dados
+enquanto (cont <= 15) faca
+   cont <- cont+1
+   total <- num1+num2
+   num1 <- num2
+   num2 <- total
+   escreva (total)
+fimenquanto
+
+fimalgoritmo
