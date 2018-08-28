@@ -1,0 +1,62 @@
+algoritmo "media_vetor"
+// Função : Recebe dois vetores com 5 posições e retorna verdadeiro se a média dos elementos dos dois vetores forem iguais e falso se forem diferentes
+// Autor : Lucas Vinicius
+// Data : 12/11/2017
+
+//Sub-rotina do tipo procedimento para receber, armazenar e tirar a media dos vetores
+procedimento resultado()
+var
+soma_1, soma_2: real
+cont: inteiro
+inicio
+//Laço de repetição para receber, armazenar e tirar a media dos elementos do primeiro vetor
+para cont de 1 ate 5 faca
+   escreval ("Digite os números do primeiro vetor: ")
+   //Recebe o número digitado pelo usuário
+   leia (nums_1[cont])
+   //Soma os números digitados pelo usuário
+   soma_1 <- nums_1[cont] + soma_1
+fimpara
+
+//Tira a media dos números do primeiro vetor
+soma_1 <- soma_1 / 5
+
+//Laço de repetição para receber, armazenar e tirar a media dos elementos do segundo vetor
+para cont de 1 ate 5 faca
+   escreval ("Digite os números do segundo vetor: ")
+   //Recebe o número digitado pelo usuário
+   leia (nums_2[cont])
+    //Soma os números digitados pelo usuário
+   soma_2 <- nums_2[cont] + soma_2
+fimpara
+
+//Tira a media dos números do segundo vetor
+soma_2 <- soma_2 / 5
+
+//Mostra na tela o resultado da função
+escreval (verificador(soma_1, soma_2))
+fimprocedimento
+
+//Sub-rotina do tipo função para verificar se a media dos dois vetores são iguais e retornar um valor
+funcao verificador(soma_1, soma_2: real): caracter
+var
+inicio
+//Caso sejam iguais, retornar verdadeiro
+se (soma_1 = soma_2) entao
+   retorne "Verdadeiro"
+senao
+//Caso sejam diferentes, retornar falso
+   retorne "Falso"
+fimse
+fimfuncao
+
+var
+nums_1, nums_2: vetor[1..5] de inteiro
+//Programa principal para chamar a sub-rotina do tipo procedimento
+inicio
+escreval ("Este programa recebe dois vetores com 5 posições e retorna verdadeiro se a média ")
+escreval ("dos elementos dos dois vetores forem iguais e falso se forem diferentes")
+escreval
+//Comando para chamar(requisitar) o procedimento
+resultado()
+fimalgoritmo
