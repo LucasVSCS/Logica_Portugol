@@ -1,0 +1,29 @@
+algoritmo "Soma_media_20"
+// Função : Lê 20 valores inteiros e mostra na tela a media deles como positivos e a media deles como negativos
+// Autor : Lucas Vinicius
+// Data : 27-Sep-17
+// Seção de Declarações 
+var
+
+cont, num, soma: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê 20 valores inteiros e mostra na tela a media deles como positivos")
+escreval ("e a media deles como negativos")
+
+//Laço de repetição
+para cont de 1 ate 20 faca
+   escreval ("Digite um número")
+   leia (num)
+   soma <- soma + num  //Soma os números digitados pelo usuário
+fimpara
+
+//Saida de dados
+//Mostra na tela a soma dos valores digitados
+escreval ("A soma dos valores é de : ", soma)
+//Mostra na tela a media negativa dos valores digitados
+escreval ("A média dos valores negativos é de: ", (soma/20)*-1)
+
+fimalgoritmo
