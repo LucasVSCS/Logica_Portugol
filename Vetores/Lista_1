@@ -1,0 +1,24 @@
+algoritmo "Vetor_10"
+// Função : Lê 10 elementos de uma matriz tipo vetor e os apresenta
+// Autor : Lucas Vinicius
+// Data : 23/10/2017
+var
+
+num: vetor [1..11] de inteiro
+cont: inteiro
+
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê 10 elementos de uma matriz tipo vetor e os apresenta")
+
+//Laço de repetição para armazenar os 10 números nas posições do vetor
+para cont de 1 ate 10 faca
+   escreval ("Digite um numero: ")
+   leia (num[cont]) //Armazena o número digitado pelo usuário na posição do contador
+fimpara
+//Laço de repetição para mostrar na tela os 10 números digitados pelo usuário, um por um
+para cont de 1 ate 10 faca
+   escreva (num[cont])
+fimpara
+
+fimalgoritmo
