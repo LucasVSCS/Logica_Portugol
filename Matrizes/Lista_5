@@ -1,0 +1,54 @@
+algoritmo "Matriz_5x5_cubo"
+// Função : Lê uma matriz 5X5 e gera outra em que cada elemento é o cubo da matriz original, tambem imprimindo o valor do meio dessa nova matriz
+// Autor : Lucas Vinicius
+// Data : 29/10/2017
+var
+
+matriz: vetor[1..5,1..5] de real
+cubo: vetor[1..5,1..5] de real
+linha, coluna: inteiro
+
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê uma matriz 5X5 e gera outra em que cada elemento é o cubo da")
+escreval ("matriz original, tambem imprimindo o valor do meio dessa nova matriz")
+escreval
+
+//Laço de repetição para receber as 5 colunas e as 5 linhas da matriz
+para coluna de 1 ate 5 faca
+   para linha de 1 ate 5 faca
+      escreval ("Digite o valor da posição [", linha, ",", coluna, "]: ")
+      leia (matriz[linha, coluna]) //Recebe a coluna e a linha digitado pelo usuário
+   fimpara
+fimpara
+
+//Laço de repetição para mostrar a matriz 5x5
+escreval ("--------------Matriz------------------")
+para linha de 1 ate 5 faca
+   para coluna de 1 ate 5 faca
+      escreva(matriz[linha, coluna]:7)
+   fimpara
+   escreval
+fimpara
+
+//Laço de repetição para elevear os elementos da matriz ao cubo
+para linha de 1 ate 5 faca
+   para coluna de 1 ate 5 faca
+      cubo[linha, coluna] <- (matriz[linha, coluna]^3)
+   fimpara
+fimpara
+
+escreval ("----------Matriz ao cubo--------------")
+//Laço de repetição para mostrar o cubo da matriz
+para linha de 1 ate 5 faca
+   para coluna de 1 ate 5 faca
+      escreva(cubo[linha, coluna]:7)
+   fimpara
+   escreval
+fimpara
+
+//Mostra o elemento do meio da matriz ao cubo
+escreval
+escreval ("O elemento do meio dessa matriz é: ", cubo[3,3])
+
+fimalgoritmo
