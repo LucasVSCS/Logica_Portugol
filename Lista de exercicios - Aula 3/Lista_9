@@ -1,0 +1,54 @@
+algoritmo "Digito_verificador"
+// Função : Dado um número de conta corrente com três dígitos, retorna o seu dígito verificador
+// Autor : Lucas Vinicius
+// Data : 26-Sep-17
+// Seção de Declarações 
+var
+
+num, dez, cen, uni, inverso, verificador: inteiro
+
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Dado um número de conta corrente, este programa retorna o seu dígito verificador")
+escreval ("--------------------------------------------------------------------------------")
+
+//Entrada de dados
+escreval ("Digite o numero de três digitos:")
+  leia(num) //Recebe o numero de três digitos fornecido pelo usuario
+
+//Processamento de dados
+//Resolve a operação para obter a unidade do numero
+uni<-num mod 10
+
+//Resolve a operação para obter a centena do numero
+cen<-num div 100
+
+//Resolve a operação para obter a dezena do numero
+dez<-(num div 10)-((num div 100)*10)
+
+//Resolve a operação para obter o número inverso
+inverso <- ((uni*100)+(cen)+(dez*10))
+
+//Soma o número pelo seu inverso
+verificador <- num + inverso
+
+//Resolve a operação para obter a centena do numero inverso
+cen <- (verificador div 100)
+
+//Resolve a operação para obter a dezena do numero inverso
+dez <- (verificador mod 100) div 10
+
+//Resolve a operação para obter a unidade do numero
+uni <- (verificador mod 100) mod 10
+
+//Multiplica a dezena pela sua ordem posicional
+dez <- dez * 2
+
+//Multiplica a unidade pela sua ordem posicional
+uni <- uni * 3
+
+//Saida de dados
+//Mostra na tela o dígito verificador da conta
+escreval("Seu digito verificador é: ", ((dez+uni+cen)mod 10))
+
+fimalgoritmo
