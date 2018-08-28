@@ -1,0 +1,63 @@
+algoritmo "Quantidade_intervalo"
+// Função : Ler um número desconhecido de valores e contar quantos deles estão em cada um dos intervalos
+// Autor : Lucas Vinicius
+// Data : 13/11/2017
+
+//Sub-rotina do tipo procedimento para ler um número desconhecido de valores e contar quantos deles estão em cada um dos intervalos e mostrar o resultado final na tela
+procedimento resultado()
+var
+resposta: caracter
+num, qtnd_1, qtnd_2, qtnd_3, qtnd_4: real
+inicio
+//Entrada de dados
+//Laço de repetição
+resposta <- "sim"
+enquanto (resposta = "sim") faca
+   escreval ("Digite um numero")
+   leia (num)  //Recebe o numero digitado pelo usuario
+   //Caso o número esteja entre 0 e 25 é acrescentado um na quantidade de números no intervalo
+   se (num>=0) e (num<=25) entao
+      qtnd_1 <- qtnd_1 + 1
+   senao
+      //Caso o número esteja entre 26 e 50 é acrescentado um na quantidade de números no intervalo
+      se (num>25) e (num<=50) entao
+         qtnd_2 <- qtnd_2 + 1
+      senao
+         //Caso o número esteja entre 51 e 75 é acrescentado um na quantidade de números no intervalo
+         se (num>50) e (num<=75) entao
+            qtnd_3 <- qtnd_3 + 1
+         senao
+            //Caso o número esteja entre 76 e 100 é acrescentado um na quantidade de números no intervalo
+            se (num>75) e (num<=100) entao
+               qtnd_4 <- qtnd_4 + 1
+            fimse
+         fimse
+      fimse
+   fimse
+   escreval ("Deseja continuar?Sim ou nao")
+   leia (resposta) //Recebe a resposta do usuário caso ele deseje continuar ou não, caso queira, o processo é repetido
+fimenquanto
+escreval
+//Saida de dados
+//Mostra na tela a quantidade de números entre 0 e 25
+escreval ("Você possui ", qtnd_1, " numero(s) entre 0 e 25")
+//Mostra na tela a quantidade de números entre 26 e 50
+escreval ("Você possui ", qtnd_2, " numero(s) entre 26 e 50")
+//Mostra na tela a quantidade de números entre 51 e 75
+escreval ("Você possui ", qtnd_3, " numero(s) entre 51 e 75")
+//Mostra na tela a quantidade de números entre 76 e 100
+escreval ("Você possui ", qtnd_4, " numero(s) entre 76 e 100")
+fimprocedimento
+
+var
+//Programa principal para chamar o procedimento
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê um número desconhecido de valores e conta quantos deles estão em")
+escreval ("cada um dos intervalos")
+escreval
+
+//Comando para requisitar(chamar) o procedimento
+resultado()
+
+fimalgoritmo
