@@ -1,0 +1,25 @@
+algoritmo "Soma_par"
+// Função : Mostra na tela a soma dos valores pares de 0 até 500
+// Autor : Lucas Vinicius
+// Data : 01-Oct-17
+// Seção de Declarações
+var
+
+num, cont, soma:inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa mostra na tela a soma dos valores pares de 0 até 500")
+
+//Laço de repetição / Processamento de dados
+enquanto (cont<=500) faca
+   soma <- soma+cont
+   cont <- cont+2
+fimenquanto
+
+//Saida de dados
+//Mostra na tela a soma dos valores pares de 0 até 500
+escreval("A soma dos valores pares de 0 até 500 é de: ", soma)
+
+fimalgoritmo
