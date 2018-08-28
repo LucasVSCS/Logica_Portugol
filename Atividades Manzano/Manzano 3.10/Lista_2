@@ -1,0 +1,27 @@
+Algoritmo "Acrescimo_salario"
+// Professor   : Cheli Mendes
+// Função      : Realiza um acréscimo no salário do usuário
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 11/09/2017
+Var
+
+SM, PR, NS: real
+
+Inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("         Este programa realiza um acréscimo no salário do usuário")
+
+//Entrada de dados
+escreval ("Digite o valor do seu salario mensal: ")
+   leia (SM)    //Recebe o valor do salário mensal
+escreval ("Digite o valor do percentual de reajuste: ")
+   leia (PR)    //Recebe o valor do percentual de reajuste do salário
+
+//Processamento de dados
+NS <- SM+(SM*PR)/100 //Converte o salário com o valor do acréscimo
+
+//Saida de dados
+escreval ("Seu novo valor salarial é de: ", NS)  //Mostra na tela o salário final já convertido
+
+Fimalgoritmo
