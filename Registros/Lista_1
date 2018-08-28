@@ -1,0 +1,57 @@
+Algoritmo "Ficha_alunos"
+// Professor   : Lucas Vinicius
+// Descrição   : Faz uma ficha com informações de 5 alunos
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 30/10/2017
+
+//Registro para classificar os 4 tipos de informações à serem adicionadas no vetor
+tipo
+
+   ficha=registro
+      nome: caracter
+      idade: inteiro
+      altura: real
+      n_chamada: inteiro
+   fimregistro
+
+Var
+
+   aluno: vetor[1..5] de ficha
+   cont: inteiro
+
+Inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa faz uma ficha com informações de 5 alunos")
+
+   //Laço de repetição para receber as informações do usuário: Nome, idade, altura e n° da chamada
+   para cont de 1 ate 5 faca
+      //Recebe o nome digitado pelo usuário
+      escreval ("Digite o nome do aluno: ")
+       leia (aluno[cont].nome)
+       //Recebe a idade digitado pelo usuário
+        escreval ("Digite a idade do aluno: ")
+         leia (aluno[cont].idade)
+        //Recebe a altura digitado pelo usuário
+          escreval ("Digite a altura do aluno: ")
+           leia (aluno[cont].altura)
+          //Recebe o n° da chamada digitado pelo usuário
+            escreval ("Digite o numero da chamada do aluno: ")
+             leia (aluno[cont].n_chamada)
+              escreval
+   fimpara
+   
+   //Laço de repetição para mostrar as informações dos 5 usuários
+   para cont de 1 ate 5 faca
+      //Mostra na tela o nome do usuário
+       escreval ("Nome do aluno: ", aluno[cont].nome)
+        //Mostra na tela a idade do usuário
+         escreval ("Idade do aluno: ", aluno[cont].idade)
+          //Mostra na tela a altura do usuário
+           escreval ("Altura do aluno: ", aluno[cont].altura)
+            //Mostra na tela o n° da chamada do usuário
+             escreval ("Número da chamada do aluno: ", aluno[cont].n_chamada)
+             //Linha para separar as informações dos usuários
+              escreval ("--------------------------------------------------")
+   fimpara
+
+Fimalgoritmo
