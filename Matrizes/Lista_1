@@ -1,0 +1,31 @@
+algoritmo "Matriz_dez"
+// Função : Lê 10 elementos de uma matriz e os apresenta
+// Autor : Lucas Vinicius
+// Data : 26/10/2017
+var
+
+matriz: vetor[1..5 , 1..5] de inteiro
+coluna, linha: inteiro
+
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê 10 elementos de uma matriz e os apresenta")
+escreval
+
+//Laço de repetição para receber as 5 colunas e as 2 linhas da matriz
+para coluna de 1 ate 5 faca
+   para linha de 1 ate 2 faca
+      escreval ("Digite o valor da posição [", linha, ",", coluna, "]: ")
+      leia (matriz[linha, coluna]) //Recebe a coluna e a linha digitado pelo usuário
+   fimpara
+fimpara
+
+//Laço de repetição para mostrar na tela a matriz
+para coluna de 1 ate 5 faca
+   para linha de 1 ate 2 faca
+      escreva (matriz[linha, coluna]:6)
+   fimpara
+   escreval
+fimpara
+
+fimalgoritmo
