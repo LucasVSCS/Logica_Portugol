@@ -1,0 +1,31 @@
+Algoritmo "DIVISAO_RAIZQ"
+// Disciplina  :  [Linguagem e Lógica de Programação] 
+// Professor   : Cheli Mendes
+// Descrição   : raizq(-6^x+2y)/3^w
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 30-Aug-17
+Var
+
+x, y, w, resultado: real
+
+Inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa resolve uma operação matemática")
+
+//Entrada de dados
+escreval ("Escreva sua primeira variavel")
+   leia (x)  //Recebe o valor da primeira variável
+escreval ("Escreva sua segunda variavel")
+   leia (y) //Recebe o valor da segunda variável
+escreval ("Escreva sua terceira variavel")
+   leia (w) //Recebe o valor da terceira variável
+
+//Processamento de dados
+resultado <- raizq(-6^x+2*y)/ 3^w
+
+//Saida de dados
+//Mostra na tela o resultado da operação
+escreval ("Seu resultado é: ", resultado)
+
+Fimalgoritmo
