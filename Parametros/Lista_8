@@ -1,0 +1,45 @@
+algoritmo "desenho"
+// Função : Dado um número, desenha um padrão na tela
+// Autor : Lucas Vinicius
+// Data : 15/11/2017
+
+//Sub-rotina do tipo procedimento para desenhar o padrão na tela
+procedimento resultado(num: inteiro)
+var
+cont, cont_2: inteiro
+inicio
+para cont de 1 ate num faca
+   para cont_2 de 1 ate num faca
+      se (cont=cont_2) entao
+         escreva (cont)
+      senao
+         se (cont = 1) ou (cont = cont_2) entao
+            escreva (" *":2)
+         senao
+            se (cont_2 = 1) ou (cont_2 = cont) entao
+               escreva (" *":2)
+            senao
+               escreva (" *":2)
+            fimse
+         fimse
+      fimse
+   fimpara
+   escreval
+fimpara
+fimprocedimento
+
+var
+num: inteiro
+//Programa principal para requisitar os dados e chamar o procedimento
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa, dado um número, desenha um padrão na tela")
+ escreval
+
+//Recebe o número digitado pelo usuário para desenhar o padrão
+escreval ("Digite um número")
+ leia (num)
+
+//Comando para chamar(requisitar) o procedimento
+resultado(num)
+fimalgoritmo
