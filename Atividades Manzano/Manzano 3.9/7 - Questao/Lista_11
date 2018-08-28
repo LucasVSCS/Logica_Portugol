@@ -1,0 +1,27 @@
+Algoritmo "Dolar"
+// Professor   : Cheli Mendes
+// Descrição   : Converte dinheiro em real para dólar
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 05/09/2017
+Var
+
+reais, cotacao, dolar: real
+
+Inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("            Este programa converte dinheiro em real para dólar")
+
+//Entrada de dados
+escreval ("Digite a quantidade de reais que voce possui: ")
+   leia (reais)   //Recebe a quantidade em reais a ser convertida
+escreval ("Digite a cotação do dólar: ")
+   leia (cotacao) //Recebe o valor da cotação do dólar
+   
+//Processamento de dados
+dolar <- reais*cotacao //Efetua a conversão do dinheiro em reais para dólar
+
+//Saida de dados
+escreva ("Voce tem", dolar, " dólares") //Mostra na tela a quantidade de dinheiro já convertida para dólar
+
+Fimalgoritmo
