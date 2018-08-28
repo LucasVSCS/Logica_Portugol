@@ -1,0 +1,31 @@
+algoritmo "Infinito_soma"
+// Função : Lê os números digitados pelo usuário até ele não querer mais e da o valores da soma como positivo e negativo
+// Autor : Lucas Vinicius
+// Data : 29-Sep-17
+// Seção de Declarações 
+var
+
+resposta, num, soma: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê os números digitados pelo usuário até ele não querer mais e da o")
+escreval ("valor da soma como positivo e negativo")
+
+//Laço de repetição/Entrada e processamento de dados
+resposta <-1
+enquanto (resposta=1) faca
+   escreval ("Digite um número")
+   leia (num)
+   soma <- num+soma //Calcula a soma dos números
+   escreval ("Digite '1' para continuar ou qualquer outro número para parar")
+   leia (resposta) //Recebe a reposta do usuário para continuar o loop ou não
+fimenquanto
+
+//Saida de dados
+//Mostra na tela a soma dos valores digitados, tanto positivo quanto negativo
+escreval ("O resultado da soma dos seus números positivos digitados: ",soma)
+escreval ("O resultado da soma dos seus números negativos digitados é de: ",soma*-1)
+
+fimalgoritmo
