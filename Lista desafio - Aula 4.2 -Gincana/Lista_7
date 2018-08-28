@@ -1,0 +1,35 @@
+algoritmo "Media"
+// Função : Lê quatro notas de um aluno e mostra na tela se ele foi aprovado ou reprovado
+// Autor : Lucas Vinicius
+// Data : 24-Sep-17
+// Seção de Declarações
+var
+
+cont, soma, nota, media: real
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Lê quatro notas de um aluno e mostra na tela se ele foi aprovado ou reprovado")
+
+//Entrada e processamento de dados
+//Laço de repetição para armazenar e somar as notas do usuário
+cont <- 1
+enquanto (cont <=4) faca
+   escreval ("Digite a sua nota: ")
+   leia (nota)
+   soma <- nota + soma
+   cont <- cont+1
+fimenquanto
+media <- soma/4
+
+//Saida de dados
+se (media>=7) entao
+   //Caso o valor da media for maior ou igual a sete, mostrar na tela que o aluno foi aprovado
+   escreval ("A media do aluno foi: ",media,", aluno aprovado")
+senao
+     //Caso seja menor que sete, mostrar na tela que o aluno foi reprovado
+   escreval ("A media do aluno foi: ",media,", aluno reprovado")
+fimse
+
+fimalgoritmo
