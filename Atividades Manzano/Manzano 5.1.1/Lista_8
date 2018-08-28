@@ -1,0 +1,26 @@
+algoritmo "Conversao"
+// Função : Converte graus celsius em fahrenheit de 10 em 10 graus
+// Autor : Lucas Vinicius
+// Data : 02/10/2017
+// Seção de Declarações
+var
+
+celsius, fahrenheit: real
+cont: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa converte graus celsius em fahrenheit de 10 em 10 graus")
+
+celsius <- 10
+
+//Laço de repetição
+enquanto (cont<10) faca
+   fahrenheit <- ((9*celsius)+160)/5
+   escreval (celsius,"° Celsius são ", fahrenheit, "° fahrenheit")
+   celsius <- celsius +10
+   cont <- cont+1
+fimenquanto
+
+fimalgoritmo
