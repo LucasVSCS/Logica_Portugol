@@ -1,0 +1,31 @@
+algoritmo "fatorial"
+// Função : Recebe por parâmetro um número inteiro e retorne o fatorial desse número
+// Autor : Lucas Vinicius
+// Data : 14/11/2017
+
+//Sub-rotina do tipo procedimento para calcular o fatorial do número
+procedimento fatorial(num: inteiro)
+var
+fat, cont: inteiro
+inicio
+fat <- 1
+para cont de 1 ate num faca
+   fat <- fat * cont
+fimpara
+escreval (fat)
+fimprocedimento
+
+var
+num: inteiro
+//Programa principal para chamar o procedimento
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa recebe um número inteiro e retorne o fatorial desse número")
+escreval
+
+escreval ("Digite um número")
+//Recebe o número digitado pelo usuário
+leia (num)
+//Comando para chamar(requisitar) o procedimento
+fatorial(num)
+fimalgoritmo
