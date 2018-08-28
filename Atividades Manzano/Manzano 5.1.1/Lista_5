@@ -1,0 +1,23 @@
+algoritmo "Potenciação de 3"
+// Função : Apresenta o cubo dos números de zero até quinze
+// Autor : Lucas Vinicius
+// Data : 01/06/2010
+// Seção de Declarações
+var
+
+result, num: real
+cont: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa apresenta na ordem o cubo dos número de zero até quinze")
+
+//Processamento e saida de dados
+para cont de 0 ate 15 faca
+   result <- num*num*num
+   num <- num+1
+   escreval(result)
+fimpara
+
+fimalgoritmo
