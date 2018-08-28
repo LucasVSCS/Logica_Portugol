@@ -1,0 +1,26 @@
+Algoritmo "Fahrenheit"
+// Professor   : Cheli Mendes
+// Descrição   : Este programa converte uma temperatura em graus celsius para Fahrenheit
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 04/09/2017
+Var
+
+cel, fahr: real
+
+Inicio
+
+//Mostra na tela a funcionalidade do usuário
+escreval ("    Este programa converte uma temperatura em graus celsius para Fahrenheit")
+
+//Entrada de dados
+escreval ("Digite a temperatura em graus celsius: ")
+leia (cel)  //Recebe a temperatura em graus Celsius
+
+//Processamento de dados
+fahr <- (9*cel+160)/5 //Converte os graus Celsius em Fahrenheit
+
+//Saida de dados
+//Mostra na tela os graus convertidos em Fahrenheit
+escreval ("Sua temperatura convertida em Fahrenheits é de: ", fahr)
+
+Fimalgoritmo
