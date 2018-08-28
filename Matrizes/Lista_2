@@ -1,0 +1,31 @@
+algoritmo "Matriz_7x8"
+// Função : Cria uma matriz 7X8 onde cada elemento é a soma dos índices de sua posição dentro da matriz
+// Autor : Lucas Vinicius
+// Data : 29/10/2017
+var
+
+matriz: vetor[1..7,1..8] de inteiro
+linha, coluna: inteiro
+
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa cria uma matriz 7X8 onde cada elemento é a soma dos índices de sua")
+escreval ("posição dentro da matriz")
+escreval
+
+//Laço de repetição para somar os indices da matriz
+para linha de 1 ate 7 faca
+     para coluna de 1 ate 8 faca
+          matriz[linha, coluna]<- linha + coluna //Soma os indices da matriz
+     fimpara
+fimpara
+
+//Laço de repetição para mostrar na tela a matriz
+para linha de 1 ate 7 faca
+     para coluna de 1 ate 8 faca
+          escreva(matriz[linha, coluna]," ")
+     fimpara
+          escreval
+fimpara
+
+fimalgoritmo
