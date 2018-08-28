@@ -1,0 +1,31 @@
+algoritmo "Diferença_maior_menor"
+// Função : Lê dois valores numéricos inteiros e apresenta o resultado da diferença do maior pelo menor
+// Autor : Lucas Vinicius
+// Data : 24-Sep-17
+// Seção de Declarações
+var
+
+num_1, num_2: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê dois valores numéricos inteiros e apresenta o resultado da")
+escreval ("diferença do maior pelo menor")
+
+//Entrada de dados
+escreval ("Digite o primeiro número: ")
+  leia (num_1) //Recebe o valor da primeira variável
+escreval ("Digite o segundo número: ")
+  leia (num_2) //Recebe o valor da segunda variável
+  
+//Processamento e saida de dados
+se (num_1 > num_2) entao
+   //Caso a primeira variável seja maior que a segunda, a operação retornará a diferença da primeira variável pela segunda
+   escreval ("O resultado da sua operação é: ",num_1-num_2)
+senao
+     //Caso a segunda variável seja maior que a primeira, a operação retornará a diferença da segunda variável pela primeira
+   escreval ("O resultado da sua operação é: ",num_2-num_1)
+fimse
+
+fimalgoritmo
