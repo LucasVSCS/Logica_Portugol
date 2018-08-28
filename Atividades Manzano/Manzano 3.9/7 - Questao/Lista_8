@@ -1,0 +1,30 @@
+Algoritmo "Volume_caixa"
+// Professor   : Cheli Mendes
+// Descrição   : Calcula o volume de uma caixa retangular
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 05/09/2017
+Var
+
+comprimento, volume, largura, altura: real
+
+Inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("           Este programa calcula o volume de uma caixa retangular")
+
+//Entrada de dados
+escreval ("Digite o valor do comprimento: ")
+   leia (comprimento) //Recebe o valor relacionado ao comprimento da da caixa
+escreval ("Digite o valor da largura: ")
+   leia (largura)     //Recebe a largura da caixa
+escreval ("Digite o valor da altura: ")
+  leia (altura)      //Recebe a altura da caixa
+
+//Processamento de dados
+volume <- comprimento*largura*altura          //Calcula o valor do volume através da fórmula
+
+//Saida de dados
+//Mostra na tela o volume da caixa baseado nas informações dadas
+escreval ("O valor do volume é: ", volume)
+
+Fimalgoritmo
