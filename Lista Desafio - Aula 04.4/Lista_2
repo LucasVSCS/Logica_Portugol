@@ -1,0 +1,22 @@
+algoritmo "Impar_0_20"
+// Função : Mostra todos os números impares de zero até vinte
+// Autor : Lucas Vinicius
+// Data : 29-Sep-17
+// Seção de Declarações
+var
+
+num: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa mostra todos os números impares de zero até vinte")
+
+num <- 1
+//Laço de repetição
+enquanto (num<20) faca
+   escreval (num)
+   num <- num + 2
+fimenquanto
+
+fimalgoritmo
