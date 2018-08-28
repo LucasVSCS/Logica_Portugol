@@ -1,0 +1,66 @@
+algoritmo "Pesquisa"
+// Função :
+// Autor : Lucas Vinicius
+// Data : 21/10/2017
+var
+
+nome, sexo, maior_pessoa: caracter
+cont: inteiro
+peso, altura, qtnd_homens, qtnd_mulheres, total_peso, mais_alto: real
+
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa realiza uma pesquisa com 250 pessoas e coleta suas informações para")
+escreval ("dados estatísticos")
+
+//Laço de repetição
+//Repete 250 vezes os passos para receber as informações dos entrevistados
+para cont de 1 ate 250 faca
+
+escreval ("Digite seu nome:")
+leia (nome) //Recebe o nome do entrevistado
+escreval ("Digite sua altura:")
+leia (altura) //Recebe a altura do entrevistado
+escreval ("Digite seu peso:")
+leia (peso)  //Recebe o peso do entrevistado
+escreval ("Digite o seu sexo (F ou M):")
+leia (sexo)  //Recebe o sexo do entrevistado
+
+//Linha criada para separar informações
+escreval ("----------------------------------------------------------------------------------")
+
+//Processamento de dados
+//Armazena o total de peso dos entrevistados
+total_peso <- peso + total_peso
+
+//Armazena o nome da pessoa caso ela possua a maior altura
+se (altura > mais_alto) entao
+ mais_alto <- altura
+      maior_pessoa <- nome
+ fimse
+//Caso o entrevistado seja homem é acrescentado um na quantidade total de homens na pesquisa
+se (sexo= "M") entao
+   qtnd_homens <- qtnd_homens + 1
+     senao
+       //Caso o entrevistado seja mulher é acrescentado um na quantidade total de mulheres na pesquisa
+       se (sexo= "F") entao
+         qtnd_mulheres <- qtnd_mulheres + 1
+      fimse
+fimse
+
+fimpara
+
+//Linha criada para separar informações
+escreval ("----------------------------------------------------------------------------------")
+
+//Saida de dados
+//Mostra na tela a quantidade de homens que partiparam da pesquisa e a porcentagem
+escreval (qtnd_homens," homens participaram dessa pesquisa, uma porcentagem de :",((qtnd_homens/250)*100):2:2,"%, sobre o total" )
+//Mostra na tela a quantidade de mulheres que partiparam da pesquisa e a porcentagem
+escreval (qtnd_mulheres," mulheres participaram dessa pesquisa, uma porcentagem de :",((qtnd_mulheres/250)*100):2:2,"%, sobre o total")
+//Mostra na tela a media de peso das pessoas que partiparam da pesquisa
+escreval ("A media do peso das pessoas nessa pesquisa foi de: ", total_peso/250)
+//Mostra na tela o nome da pessoa mais alta da pesquisa
+escreval ("A maior pessoa é: ", maior_pessoa)
+
+fimalgoritmo
