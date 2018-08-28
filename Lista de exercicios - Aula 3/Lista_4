@@ -1,0 +1,37 @@
+algoritmo "Salario_liquido"
+// Função : Cálculo Salário Líquido
+// Autor :  Lucas Vinicius
+// Data : 19/09/2017
+var
+
+valor_hr, hrs_trabalhadas,inss, sl_bruto, sl_liquido: real
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("                   Este programa efetua o cálculo do salário líquido")
+escreval ("----------------------------------------------------------------------------------")
+
+//Entrada de dados
+
+//Recebe o valor relacionado ao valor hora
+escreval ("Digite o valor das horas trabalhadas: ")
+   leia (valor_hr)
+//Recebe o valor de horas trabalhas no mês
+escreval ("Digite o número de horas trabalhadas no mês")
+   leia (hrs_trabalhadas)
+//Recebe o valor percentual de desconto do INSS
+escreval ("Digite o valor percentual de desconto do seu INSS: ")
+   leia (inss)
+   
+//Processamento de dados
+//Operação para encontrar o valor do salário bruto
+sl_bruto <- valor_hr * hrs_trabalhadas
+//Operação para encontrar o valor do salário liquido
+sl_liquido <- sl_bruto - sl_bruto*inss/100
+
+//Saida de dados
+//Mostra na tela o valor do salário liquido baseado nas informações fornecidas pelo usuário
+escreval ("Seu Salário líquido é de: ",sl_liquido," reais")
+
+fimalgoritmo
