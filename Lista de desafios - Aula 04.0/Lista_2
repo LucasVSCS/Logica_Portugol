@@ -1,0 +1,44 @@
+algoritmo "Salario_Descontado_INSS"
+// Função : Calcula o Desconto INSS de acordo com o salário bruto do usuário
+// Autor : Lucas Vinicius
+// Data : 23-Sep-17
+// Seção de Declarações
+var
+
+sl_bruto, inss: real
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("     Este programa calcula o desconto do INSS e o salário liquido do usuário")
+escreval ("----------------------------------------------------------------------------------")
+
+//Entrada de dados
+escreval ("Digite o valor do seu salário bruto: ")
+   leia (sl_bruto) //Recebe o valor do salário bruto do usuário
+   
+//Processamento de dados
+
+//Caso o salário bruto do usuário for maior ou igual a R$500 o valor de desconto do INSS será de 8%
+se (sl_bruto <= 500) entao
+   inss <- 0.08
+senao
+     //Caso o salário bruto do usuário for maior que R$500 e menor ou igual a R$1000 o valor de desconto do INSS será de 10%
+   se (sl_bruto > 500) e (sl_bruto <= 1000) entao
+      inss <- 0.10
+   senao
+        //Caso o salário bruto do usuário for maior que R$1000 o valor de desconto do INSS será de 12%
+      inss <- 0.12
+   fimse
+fimse
+
+//Saida de dados
+
+//Calcula e mostra na tela a porcentagem do INSS do usuário
+escreval ("Sua taxa de INSS é de: ", inss*100, " %")
+//Calcula e mostra na tela o valor total do desconto do INSS do usuário
+escreval ("Seu valor de INSS é de: R$", inss*sl_bruto)
+//Calcula e mostra na tela o valor do salário liquido do usuário
+escreval ("Seu salario liquido é de: R$ ", sl_bruto - (inss*sl_bruto))
+
+fimalgoritmo
