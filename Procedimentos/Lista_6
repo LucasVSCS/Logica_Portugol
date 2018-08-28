@@ -1,0 +1,45 @@
+algoritmo "Peso_ideal"
+// Função : Programa que recebe os dados do usuário e calcula o seu peso ideal
+// Autor : Lucas Vinicius
+// Data : 06/11/2017
+
+//Sub-rotina do tipo procedimento para receber a altura e o sexo do entrevistado e para mostrar na tela o resultado final
+procedimento ficha()
+var
+altura: real
+sexo: caracter
+inicio
+escreval ("Digite sua altura: ")
+  //Recebe a altura do usuário
+   leia (altura)
+     escreval ("Digite seu sexo (Masculino ou Feminino): ")
+       //Recebe o gênero do usuário
+       leia (sexo)
+         //Mostra na tela o resultado final
+           escreval ("O peso ideal para sua altura e gênero é de: ", calculo(altura;sexo))
+fimprocedimento
+
+//Sub-rotina do tipo função para calcular o peso ideal do usuário
+funcao calculo (altura: real;sexo:caracter): real
+var peso_ideal: real
+inicio
+se (sexo = "Masculino") entao
+   //Caso a pessoa seja do gênero masculino é calculado o peso ideal dado a formula X
+   peso_ideal <- 72.7 * altura - 58
+   retorne peso_ideal
+senao
+  //Caso a pessoa seja do gênero feminino é calculado o peso ideal dado a formula Y
+   peso_ideal <- 62.1 * altura - 44.7
+   retorne peso_ideal
+fimse
+fimfuncao
+
+var
+//Programa principal para chamar o procedimento
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa recebe os dados do usuário e calcular o seu peso ideal")
+escreval
+//Comando para requisitar(chamar) o procedimento
+ficha()
+fimalgoritmo
