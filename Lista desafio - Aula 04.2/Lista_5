@@ -1,0 +1,26 @@
+algoritmo "Media_10"
+// Função : Lê 10 valores inteiros e mostra na tela a media deles
+// Autor : Lucas Vinicius
+// Data : 27-Sep-17
+// Seção de Declarações 
+var
+
+cont, num, soma: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê 10 valores inteiros e mostra na tela a media deles")
+
+//Laço de repetição
+para cont de 1 ate 10 faca
+   escreval ("Digite um número")
+   leia (num)
+   soma <- soma + num //Soma os números digitados pelo usuário
+fimpara
+
+//Saida de dados
+//Calcula e mostra na tela a media dos valores digitados
+escreval ("A media dos valores é de : ", soma/10)
+
+fimalgoritmo
