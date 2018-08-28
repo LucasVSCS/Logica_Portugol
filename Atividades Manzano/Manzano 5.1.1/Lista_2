@@ -1,0 +1,25 @@
+algoritmo "Soma_0_100"
+// Função : Apresenta a soma dos números de zero até cem
+// Autor : Lucas Vinicius
+// Data : 01-Oct-17
+// Seção de Declarações
+var
+
+cont, soma: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa apresenta a soma dos números de zero até cem")
+
+//Processamento de dados
+enquanto (cont<=100) faca
+   soma <- soma+cont
+   cont <- cont +1
+fimenquanto
+
+//Saida de dados
+//Mostra na tela a soma dos números de zero até cem
+escreval ("A soma dos número de zero até cem é de: ",soma)
+
+fimalgoritmo
