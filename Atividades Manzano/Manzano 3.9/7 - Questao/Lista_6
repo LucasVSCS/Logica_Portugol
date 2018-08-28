@@ -1,0 +1,32 @@
+Algoritmo "Inversão"
+// Professor   : Cheli Mendes
+// Descrição   : Inverte os valores de uma variavel
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 04/09/2017
+Var
+
+a, b, aux: real
+
+Inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("               Este programa inverte os valores de uma variavel")
+
+//Entrada de dados
+escreval ("Digite o valor de A: ")
+   leia (a) //Recebe o primeiro valor
+escreval ("Digite o valor de B: ")
+   leia (b) //Recebe o segundo valor
+
+//Processamento de dados
+aux <- a  //Armazena o valor da primeira variável em uma variável auxiliar
+a <- b  //Armazena o valor da segunda variável na primeira variável
+b <- aux  //Armazena o valor da variável auxiliar na segunda variável
+
+//Saida de dados
+//Mostra na tela o valor da primeira variável
+escreval ("O valor de A é de: ", a)
+//Mostra na tela o valor da segunda variável
+escreval ("O valor de B é de: ", b)
+
+Fimalgoritmo
