@@ -1,0 +1,36 @@
+algoritmo "crescente"
+// Função : Recebe dois valores por referência e ordena-os em ordem crescente
+// Autor : Lucas Vinicius
+// Data : 14/11/2017
+
+//Sub-rotina do tipo procedimento para ordenar os números em ordem crescente
+procedimento resultado(num_1, num_2: inteiro)
+inicio
+//Caso a variável um seja maior que a dois, a um é mostrado por ultimo
+se (num_1 > num_2) entao
+   escreval (num_2," ", num_1)
+   
+     //Caso a variável um seja menor que a dois, a dois é mostrado por ultimo
+     senao
+       escreval (num_1," ", num_2)
+fimse
+fimprocedimento
+
+
+var
+num_1, num_2: inteiro
+//Programa principal para chamar o procedimento
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa recebe dois valores e ordena-os em ordem crescente")
+escreval
+
+escreval ("Digite o primeiro valor: ")
+  //Recebe o primeiro valor digitado pelo usuário
+  leia (num_1)
+   escreval ("Digite o segundo valor: ")
+   //Recebe o segundo valor digitado pelo usuário
+    leia (num_2)
+    //Comando para chamar(requisitar) o procedimento
+     resultado(num_1, num_2)
+fimalgoritmo
