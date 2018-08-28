@@ -1,0 +1,46 @@
+Algoritmo "primos_100"
+// Função : Gera e mostra os dez primeiros números primos acima de 100
+// Autor : Lucas Vinicius
+// Data : 06/11/2017
+
+//Sub-rotina do tipo procedimento para mostrar na tela o resultado final
+procedimento primo()
+var
+inicio
+escreval (resultado())
+fimprocedimento
+
+//Sub-rotina do tipo função para gerar os 10 primeiros números primos apos o número 100
+funcao resultado ():inteiro
+var
+nums_primos:vetor[1..10] de inteiro
+cont, contador,qtde,num,divi:inteiro
+inicio
+
+num <- 101
+contador <- 1
+repita
+   divi <- 0
+   para cont <- 1 ate num faca
+      se (num mod cont = 0) entao
+         divi <- divi + 1
+      fimse
+   fimpara
+   se (divi =  2) entao
+      nums_primos[contador] <- num
+      contador <- contador + 1
+   fimse
+   num <- num + 1
+ate (contador = 11)
+
+para cont de 1 ate 10 faca
+   escreval (nums_primos[cont])
+fimpara
+fimfuncao
+
+var
+//Programa principal para requisitar o procedimento
+inicio
+//Comando para chamar(requisitar) o procedimento
+primo()
+fimalgoritmo
