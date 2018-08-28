@@ -1,0 +1,39 @@
+algoritmo "Par_logico"
+// Função : Verifica se um determinado número é par e retorna um valor lógico (verdadeiro ou falso)
+// Autor : Lucas Vinicius
+// Data : 14/11/2017
+
+//Sub-rotina do tipo procedimento para receber o número digitado pelo usuário e mostrar o resultado final na tela
+procedimento resultado()
+var
+num: inteiro
+inicio
+escreval ("Digite um valor")
+  leia (num)
+   escreval (checar(num))
+fimprocedimento
+
+//Sub-rotina do tipo função para checar se o número é par ou não retornar um valor lógico
+funcao checar(num: inteiro): caracter
+var
+inicio
+//Caso seja par, retornar "Verdadeiro"
+se (num mod 2 = 0) entao
+   retorne "Verdadeiro"
+   //Caso não seja par, retornar "Falso"
+senao
+   retorne "Falso"
+fimse
+fimfuncao
+
+var
+//Programa principal para requisitar os dados e chamar o procedimento
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa verifica se um determinado número é par e retorna um valor lógico")
+escreval ("(verdadeiro ou falso)")
+escreval
+
+//Comando para chamar(requisitar) o procedimento
+resultado()
+fimalgoritmo
