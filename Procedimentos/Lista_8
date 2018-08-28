@@ -1,0 +1,50 @@
+algoritmo "Matriz_funcao"
+// Função : Programa que recebe uma matriz 6x6 e multiplica cada linha pelo elemento da diagonal principal daquela linha
+// Autor : Lucas Vinicius
+// Data : 26/10/2017
+
+//Sub-rotina do tipo procedimento para receber a matriz e mostrar na tela o resultado final
+procedimento resultado()
+var
+linha, coluna:inteiro
+inicio
+para coluna de 1 ate 6 faca
+   para linha de 1 ate 6 faca
+      escreval ("Digite o valor da posição [", linha, ",", coluna, "]: ")
+      leia (matriz[linha, coluna]) //Recebe a coluna e a linha digitado pelo usuário
+   fimpara
+fimpara
+escreva (calculo())
+fimprocedimento
+
+//Sub-rotina do tipo função para calcular cada linha pelo elemento da diagonal principal daquela linha
+funcao calculo(): inteiro
+var
+linha, coluna: inteiro
+inicio
+para coluna de 1 ate 6 faca
+   para linha de 1 ate 6 faca
+      se (linha = coluna) entao
+         matriz_2[linha, coluna] <- matriz[linha, coluna]
+      senao
+         matriz_2[linha, coluna] <- matriz[linha, coluna] * matriz[coluna, coluna]
+      fimse
+   fimpara
+fimpara
+
+para coluna de 1 ate 6 faca
+   para linha de 1 ate 6 faca
+      escreva (matriz_2[linha, coluna]:4)
+   fimpara
+   escreval
+fimpara
+fimfuncao
+
+
+var
+matriz, matriz_2:vetor[1..6, 1..6] de inteiro
+//Programa principal para requisitar o procedimento
+inicio
+//Comando para chamar(requisitar) o procedimento
+resultado()
+fimalgoritmo
