@@ -1,0 +1,50 @@
+algoritmo "Qtnd_fatorial_soma"
+// Função : Lê números e informa a quantidade de divisores, seu fatorial ou sua soma de acordo com a condição
+// Autor : Lucas Vinicius
+// Data : 21/10/2017
+var
+
+resposta: caracter
+m, cont: inteiro
+divisores, fatorial, soma: real
+
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê números e informa a quantidade de divisores, seu fatorial ou")
+escreval ("sua soma de acordo com a condição")
+//Entrada de dados
+//Laço de repetição
+resposta <- "sim"
+fatorial <- 1
+enquanto (resposta = "sim") faca
+   escreval ("Digite um numero")
+   leia (m)  //Recebe o numero digitado pelo usuario
+
+   //Caso ele seja par
+   se (m mod 2 = 0) entao
+      para cont de 1 ate m faca
+         se (m mod cont = 0) entao
+            divisores <- divisores + 1    //Calcula a quantidade de divisores do numero
+         fimse
+      fimpara
+      escreval ("Este numero é par e possui", divisores, " divisores")
+      //Caso ele seja impar e menor que 12
+   senao
+      se (m < 12) entao
+         para cont de 1 ate m faca
+            fatorial <- fatorial*cont //Calcula o fatorial do numero
+         fimpara
+         escreval ("Este numero é impar, menor que 12 e seu fatorial é de: ", fatorial)
+      senao
+         //Caso ele seja impar e maior que 12
+         para cont de 1 ate m faca
+            soma <- soma + cont      //Calcula a soma dos inteiros do numero
+         fimpara
+         escreval ("Este numero é impar, maior que 12 e a soma dos seus inteiros é de", soma)
+      fimse
+   fimse
+   escreval ("Deseja continuar?Sim ou nao")
+   leia (resposta) //Recebe a resposta do usuário caso ele deseje continuar ou não, caso queira, o processo é repetido
+fimenquanto
+
+fimalgoritmo
