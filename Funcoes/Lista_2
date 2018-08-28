@@ -1,0 +1,34 @@
+Algoritmo "Atraso_prestaçao"
+// Descrição   : Calcula o valor de uma prestação em atraso
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 13/11/2017
+
+//Sub-rotina do tipo procedimento para calcular o valor da prestação em atraso e mostrar o resultado
+procedimento resultado()
+var
+prest, val, taxa, temp: real
+inicio
+//Entrada de dados
+escreval ("Digite o valor da prestação: ")
+   leia (val)  //Recebe o valor inicial da prestação
+escreval ("Digite o valor da taxa de atraso: ")
+   leia (taxa) //Recebe o valor da taxa da prestação atrasada
+escreval ("Digite o tempo de atraso: ")
+   leia (temp) //Recebe o tempo relacionado ao atraso do pagamento da prestação
+
+//Processamento de dados
+prest <- val + (val*taxa/100) * temp  //Calcula o valor da prestação com o acréscimo do atraso
+
+//Saida de dados
+//Mostra na tela o valor da prestação ja acrescentado o valor do atraso
+escreval ("O valor da sua prestação em atraso é de: ", prest)
+fimprocedimento
+
+Var
+//Programa principal para chamar o procedimento
+Inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa calcula o valor de uma prestação em atraso")
+//Comando para requisitar(chamar) o procedimento
+resultado()
+Fimalgoritmo
