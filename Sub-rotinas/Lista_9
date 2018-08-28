@@ -1,0 +1,45 @@
+algoritmo "vetorprimo_0"
+// Função : Recebe um vetor de 25 posições e substitui todos seus valores primos por 0
+// Autor : Lucas Vinicius
+// Data : 06/11/2017
+
+//Sub-rotina do tipo procedimento para receber o vetor de 25 posições e substituir todos seus valores primos por 0 e mostrar o resultado na tela
+procedimento resultado()
+var
+cont,cont_2, i:inteiro
+inicio
+//Contador para preencher as 25 posições do vetor, verificar se é primo e caso seja, mudar seu valor para 0
+para cont de 1 ate 25 faca
+   i <- 0
+   escreval ("Digite um número")
+   //Recebe o valor digitado pelo usuário
+   leia (num[cont])
+   //Contador para verificar se é primo e mudar seu valor para 0 caso seja
+   para cont_2 de 1 ate num[cont] faca
+      se (num[cont] mod cont_2 = 0) entao
+         i <- i +1
+      fimse
+      cont_2 <- cont_2 + 1
+   fimpara
+   se(i = 2) entao
+      num[cont] <- 0
+   fimse
+fimpara
+//Mostra na tela todos os números digitados pelo usuário, caso algum deles for primo terá 0 substituido do seu valor
+escreval ("--------------------------------Números-----------------------------------------")
+para cont de 1 ate 25 faca
+   escreva (num[cont])
+fimpara
+fimprocedimento
+
+var
+num: vetor[1..25] de inteiro
+//Programa principal para chamar a sub-rotina do tipo procedimento
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa Recebe um vetor de 25 posições e substitui todos seus valores ")
+escreval ("primos por 0")
+escreval
+//Comando para chamar(requisitar) o procedimento
+resultado()
+fimalgoritmo
