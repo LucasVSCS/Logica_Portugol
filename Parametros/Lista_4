@@ -1,0 +1,38 @@
+algoritmo "remocao_ocorrencias"
+// Função : Recebe por parâmetro um número e remove todas as ocorrências desse valor de um vetor
+// Autor : Lucas Vinicius
+// Data : 15/11/2017
+
+//Sub-rotina do tipo procedimento para remover os números do vetor de acordo com o número digitado pelo usuário e mostrar o resultado
+procedimento resultado(num: inteiro)
+inicio
+para cont de 1 ate 5 faca
+   se (vet[cont] = num) entao
+      vet[cont] <- 0
+   fimse
+   escreva (vet[cont])
+fimpara
+fimprocedimento
+
+var
+vet: vetor[1..5] de inteiro
+num, cont: inteiro
+//Programa principal para chamar o procedimento
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa recebe um número e remove todas as ocorrências desse valor de um vetor")
+ escreval
+
+ //Recebe os valores à serem armazenados no vetor
+ escreval ("Digite os números à serem armazenadas no vetor")
+  para cont de 1 ate 5 faca
+   leia (vet[cont])
+  fimpara
+
+ //Recebe o valor à ser removido do vetor
+ escreval ("Digite o número à ser removido do vetor")
+  leia (num)
+
+ //Comando para requisitar(chamar) o procedimento
+ resultado(num)
+fimalgoritmo
