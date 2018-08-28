@@ -1,0 +1,30 @@
+algoritmo "procedimento_castigo"
+// Função : Solicita um número N inteiro ao usuário e chama um procedimento que escreve N vezes a frase :"Não vou colar na Prova"
+// Autor : Lucas Vinicius
+// Data : 06/11/2017
+
+//Sub-rotina do tipo procedimento para escrever a frase N vezes determinada pelo usuário
+procedimento castigo(n: inteiro)
+var
+inicio
+para n de n ate 1 passo -1 faca
+   escreval ("Não vou colar na prova")
+fimpara
+fimprocedimento
+
+//Programa principal para chamar o procedimento
+var
+n: inteiro
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa solicita um número N inteiro ao usuário e chama um procedimento que")
+escreval ("escreve N vezes a frase : ''Não vou colar na Prova''")
+escreval
+
+
+escreval ("Digite um número inteiro: ")
+//Recebe o número digitado pelo usuário
+leia (n)
+//Comando para requisitar(chamar) o procedimento
+castigo(n)
+fimalgoritmo
