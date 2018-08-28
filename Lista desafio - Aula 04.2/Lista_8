@@ -1,0 +1,29 @@
+algoritmo "Soma_infinita"
+// Função : Lê os números digitados pelo usuário até ele não querer mais e os soma
+// Autor : Lucas Vinicius
+// Data : 28/09/2017
+// Seção de Declarações 
+var
+
+resposta, num, soma: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Lê os números digitados pelo usuário até ele não querer mais e os soma")
+
+//Laço de repetição/Entrada e processamento de dados
+resposta <-1
+enquanto (resposta=1) faca
+   escreval ("Digite um número")
+   leia (num)
+   soma <- num+soma //Operação para somar e armazenar os números digitados pelo usuário
+   escreval ("Digite '1' para continuar ou qualquer outro número para parar")
+   leia (resposta) //Recebe a reposta do usuário para continuar o loop ou não
+fimenquanto
+
+//Saida de dados
+//Mostra na tela a soma dos valores digitados pelo usuário
+escreval ("O resultado da soma dos seus números digitados: ",soma)
+
+fimalgoritmo
