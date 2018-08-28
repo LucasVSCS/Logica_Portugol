@@ -1,0 +1,29 @@
+algoritmo "Soma_media"
+// Função : Lê 10 números e mostra a soma e a média aritmética deles
+// Autor : Lucas Vinicius
+// Data : 02/10/2017
+// Seção de Declarações
+var
+
+cont, soma, num: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê 10 números e mostra a soma e a média aritmética deles")
+
+//Laço de repetição e processamento de dados
+enquanto (cont<10) faca
+   escreval ("Digite um número")
+   leia (num)
+   soma <- soma+num
+   cont <- cont + 1
+fimenquanto
+
+//Saida de dados
+//Mostra na tela a soma dos valores lidos
+escreval ("A soma dos seus números é de: ", soma)
+//Mostra na tela a média artmética dos valores lidos
+escreval ("A media dos seus números é de: ", soma/10)
+
+fimalgoritmo
