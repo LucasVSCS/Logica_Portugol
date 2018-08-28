@@ -1,0 +1,37 @@
+algoritmo "calculo_formula"
+// Função : Calcula um número dado a fórmula
+// Autor : Lucas Vinicius
+// Data : 06/11/2017
+
+//Sub-rotina do tipo procedimento para receber o número digitado pelo usuário e para mostrar o resultado final na tela
+procedimento resultado()
+var
+x: real
+inicio
+escreval ("Digite o valor de X: ")
+//Recebe o número digitado pelo usuário
+leia (x)
+//Mostra na tela o resultado da operação
+escreval ("O resultado é ",conta(x))
+fimprocedimento
+
+//Sub-rotina do tipo função para calcular o número conforme a fórmula
+funcao conta(x: real): real
+var
+result, divisor: real
+inicio
+repita
+   divisor <- divisor + 1
+   result <- x/divisor + result
+ate (divisor = x)
+retorne result
+fimfuncao
+
+var
+//Programa principal para chamar o procedimento
+inicio
+escreval ("Este programa calcula um número dado a formula")
+escreval
+//Comando para requisitar(chamar) o procedimento
+resultado()
+fimalgoritmo
