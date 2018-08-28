@@ -1,0 +1,46 @@
+algoritmo "Calculo_custo_energia"
+// Função : Cálculo  custo de energia
+// Autor :  Lucas Vinicius
+// Data : 19-Sep-17
+var
+
+aparelho_1, aparelho_2: caracter
+potencia_1, tempo_1, potencia_2, tempo_2, consumohr_1: real
+consumodia_1, consumomes_1, consumohr_2, consumodia_2, consumomes_2: real
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa calcula o custo de energia de dois aparelhos")
+escreval ("----------------------------------------------------------------------------------")
+
+//Entrada de dados
+escreval ("Digite o nome do primeiro aparelho: ")
+   leia (aparelho_1)  //Recebe o nome do primeiro aparelho
+escreval ("Digite a potência em watts do primeiro aparelho: ")
+   leia (potencia_1)  //Recebe a potência em watts do primeiro aparelho
+escreval ("Digite o tempo diário de utilização do primeiro aparelho: ")
+   leia (tempo_1)     //Recebe o tempo de uso do primeiro aparelho
+escreval ("Digite o nome do segundo aparelho: ")
+   leia (aparelho_2)  //Recebe o nome do segundo aparelho
+escreval ("Digite a potência em watts do segundo aparelho aparelho: ")
+   leia (potencia_2)  //Recebe a potência em watts do segundo aparelho
+escreval ("Digite o tempo diário de utilização do segundo aparelho: ")
+   leia (tempo_2)     //Recebe o tempo de uso do segundo aparelho
+   
+//Processamento de dados
+consumohr_1 <-  (potencia_1/1000)*0.642                  //Calcula o gasto por hora do primeiro aparelho
+consumodia_1 <- ((potencia_1/1000)* tempo_1)*0.642       //Calcula o gasto por dia do primeiro aparelho
+consumomes_1 <- ((potencia_1/1000)* tempo_1 * 30)*0.642  //Calcula o gasto por mês do primeiro aparelho
+
+consumohr_2 <-  (potencia_2/1000)*0.642                  //Calcula o gasto por hora do segundo aparelho
+consumodia_2 <- ((potencia_2/1000)* tempo_2)*0.642       //Calcula o gasto por dia do segundo aparelho
+consumomes_2 <- ((potencia_2/1000)* tempo_2 * 30)*0.642  //Calcula o gasto por mês do segundo aparelho
+
+//Saida de dados
+//Mostra na tela o nome do primeiro aparelho, seu consumo por hora, por dia e por mês
+escreval ("A(O) ", aparelho_1," custa: R$", consumohr_1:2:2," por hora, R$",consumodia_1:2:2," por dia e R$", consumomes_1:2:2," por mes")
+//Mostra na tela o nome do segundo aparelho, seu consumo por hora, por dia e por mês
+escreval ("A(O) ", aparelho_2," custa: R$", consumohr_2:2:2," por hora, R$",consumodia_2:2:2," por dia e R$", consumomes_2:2:2," por mes")
+
+fimalgoritmo
