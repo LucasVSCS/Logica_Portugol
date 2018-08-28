@@ -1,0 +1,53 @@
+algoritmo "Aumento_salario"
+// Função : Cálculo Aumento salarial
+// Autor : Lucas Vinicius
+// Data : 23-Sep-17
+// Seção de Declarações
+var
+
+salario, sl_total:real
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa calcula o ajuste salárial do usuário com base no valor do seu salário")
+
+//Entrada de dados
+escreval ("Digite o valor do seu salário: ")
+leia (salario)  //Recebe o valor do salário do usuário
+
+//Processamento e saida de dados
+//Caso o salário seja menor ou igual a 400 mostra na tela o valor final com o ajuste de 15%
+se (salario<=400) entao
+   sl_total <- (salario*0.15)+salario
+   escreval ("Seu salário com o aumento será de: R$",sl_total)
+senao
+     //Caso seja maior que R$400 e menor ou igual a R$700 mostra na tela o valor final com o ajuste de  12%
+   se (salario>400) e (salario<=700) entao
+      sl_total <- (salario*0.12)+salario
+      escreval ("Seu salário com o aumento será de: R$",sl_total)
+   senao
+        //Caso seja maior que R$700 e menor ou igual a R$1000 mostra na tela o valor final com o ajuste de 10%
+      se (salario>700) e (salario<=1000) entao
+         sl_total <- (salario*0.10)+salario
+         escreval ("Seu salário com o aumento será de: R$",sl_total)
+      senao
+            //Caso seja maior que R$1000 e menor ou igual a R$1800 mostra na tela o valor final com o ajuste de 7%
+         se (salario>1000) e (salario<=1800) entao
+            sl_total <- (salario*0.07)+salario
+            escreval ("Seu salário com o aumento será de: R$",sl_total)
+         senao
+              //Caso seja maior que R$1800 e menor ou igual a R$2500 mostra na tela o valor final com o ajuste de 4%
+            se (salario>1800) e (salario<=2500) entao
+               sl_total <- (salario*0.04)+salario
+               escreval ("Seu salário com o aumento será de: R$",sl_total)
+            senao
+                 //Caso seja acima de R$2500 mostra o salário sem reajustes
+               escreval ("Seu salário permanecerá em R$",salario,", não haverá aumento")
+            fimse
+         fimse
+      fimse
+   fimse
+fimse
+
+fimalgoritmo
