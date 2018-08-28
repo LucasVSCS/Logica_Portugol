@@ -1,0 +1,26 @@
+Algoritmo "Quadrado_diferença"
+// Professor   : Cheli Mendes
+// Descrição   : Quadrado da diferença de dois numeros
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 05/09/2017
+Var
+
+A, B, result: real
+
+Inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa encontra o quadrado da diferença de dois numeros")
+
+escreval ("Digite o valor de A: ")
+   leia (A)  //Recebe o primeiro valor
+escreval ("Digite o valor de B: ")
+   leia (B)  //Recebe o segundo valor
+   
+//Processamento de dados
+result <- (A-B)^2    //Obtém o valor da diferença do primeiro numero pelo segundo numero e eleva-o ao quadrado
+
+//Saida de dados
+escreval ("O resultado é: ", result)  //Mostra na tela o resultado final da operação
+
+Fimalgoritmo
