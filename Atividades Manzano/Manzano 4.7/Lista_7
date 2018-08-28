@@ -1,0 +1,39 @@
+algoritmo "Divisor_2_3"
+// Função : Recebe quatro números e verifica se eles são divisiveis por 2 ou 3
+// Autor : Lucas Vinicius
+// Data : 24-Sep-17
+// Seção de Declarações
+var
+
+num_1, num_2, num_3, num_4: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa recebe quatro números e verifica se eles são divisiveis por 2 ou 3")
+
+//Entrada de dados
+escreval ("Digite um número inteiro para a primeira variável: ")
+   leia (num_1)
+escreval ("Digite um número inteiro para a segunda variável: ")
+   leia (num_2)
+escreval ("Digite um número inteiro para a terceira variável: ")
+   leia (num_3)
+escreval ("Digite um número inteiro para a quarta variável: ")
+   leia (num_4)
+
+//Processamento e saida de dados
+//Verifica e mostra na tela quais os números são divisiveis por 2 e 3
+se (num_1%2 = 0) e (num_1%3 = 0) entao
+  escreval (num_1," é divisivel por 2 e 3")
+    fimse
+se (num_2%2 = 0) e (num_2%3 = 0) entao
+  escreval (num_2," é divisivel por 2 e 3")
+    fimse
+se (num_3%2 = 0) e (num_3%3 = 0) entao
+  escreval (num_3," é divisivel por 2 e 3")
+    fimse
+se (num_4%2 = 0) e (num_4%3 = 0) entao
+  escreval (num_4," é divisivel por 2 e 3")
+    fimse
+fimalgoritmo
