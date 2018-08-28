@@ -1,0 +1,35 @@
+algoritmo "Maior_menor"
+// Função : Lê valores positivos inteiros até que um valor negativo seja informado e mostra o maior e menor valor digitado
+// Autor : Lucas Vinicius
+// Data : 02-Oct-17
+// Seção de Declarações
+var
+
+num, maior, menor: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê valores positivos inteiros até que um valor negativo seja")
+escreval ("informado e mostra o maior e menor valor digitado")
+
+//Laço de repetição
+repita
+   escreval ("Digite um número")
+   leia (num)
+   se (num > maior) entao
+      maior <- num
+   senao
+      se (num < maior) entao
+         menor <- num
+      fimse
+   fimse
+ate (num<0)
+
+//Saida de dados
+//Mostra na tela o maior número digitado
+escreval ("O maior número dentre os digitados foi: ", maior)
+//Mostra na tela o menor número digitado
+escreval ("O menor número dentre os digitados foi: ", menor)
+
+fimalgoritmo
