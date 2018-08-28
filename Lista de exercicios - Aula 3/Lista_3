@@ -1,0 +1,23 @@
+algoritmo "Area_circunferencia"
+// Função : Área de uma circunferência
+// Autor :  Lucas Vinicius
+// Data : 19/09/2017
+var
+
+raio: real
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("               Este programa calcula a área de uma circunferência")
+escreval ("----------------------------------------------------------------------------------")
+
+//Entrada de dados
+escreval ("Digite o valor do raio")
+  leia (raio) //Recebe o valor do raio
+
+//Saida de dados
+//Realiza a operação e mostra na tela seu resultado
+escreval ("A área da sua circunferência é de: ", (3.14*(raio^2)))
+
+fimalgoritmo
