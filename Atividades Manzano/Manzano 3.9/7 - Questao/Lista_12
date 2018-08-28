@@ -1,0 +1,29 @@
+Algoritmo "Soma_quadrado"
+// Professor   : Cheli Mendes
+// Descrição   : Soma dos quadrados
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 05/09/2017
+Var
+
+A, B, C, result: real
+
+Inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("                Este programa realiza a soma dos quadrados")
+
+//Entrada de dados
+escreval ("Digite o valor de A: ")
+   leia (A)  //Recebe o valor da primeira variável
+escreval ("Digite o valor de B: ")
+   leia (B)  //Recebe o valor da segunda variável
+escreval ("Digite o valor de C: ")
+   leia (C)  //Recebe o valor da terceira variável
+   
+//Processamento de dados
+result <- (A^2)+(B^2)+(C^2)  //Efetua a soma dos quadrados das variáveis
+
+//Saida de dados
+escreval ("O resultado foi: ", result) //Mostra o resultado da operação na tela
+
+Fimalgoritmo
