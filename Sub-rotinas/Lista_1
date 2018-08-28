@@ -1,0 +1,33 @@
+algoritmo "Sub-rotina_soma"
+// Função : Sub-rotina para somar dois números e amostrar seu resultado
+// Autor : Lucas Vinicius
+// Data : 30/10/2017
+var
+
+//Sub-rotina do tipo procedimento para requisitar os dados do usuário e mostrar o resultado final na tela
+procedimento resultado() //Nome da sub-rotina e seu parametro(não possui)
+var num_1, num_2: real  //Variaveis declaradas para serem usadas dentro da sub-rotina
+inicio
+escreval ("Digite o primeiro número: ")
+//Recebe o primeiro número digitado pelo usuário
+leia (num_1)
+escreval ("Digite o segundo número: ")
+//Recebe o segundo número digitado pelo usuário
+leia (num_2)
+//Mostra na tela a soma dos números
+escreval ("A soma dos números é: ",soma_numeros(num_1, num_2))
+fimprocedimento
+
+//Sub-rotina do tipo função para somar os dois números
+funcao soma_numeros(num_1, num_2: real): real //Nome da sub-rotina, suas variaveis e de que tipo sera seu retorno
+var
+soma: real //Variavel declarada para ser usada dentro da sub-rotina
+inicio
+soma <- num_1 + num_2 //Soma os dois números fornecidos pelo usuário
+retorne soma //Variavel a ser retornada dentro da sub-rotina
+fimfuncao
+
+inicio
+//Linha para chamar(requisitar) o procedimento
+resultado
+fimalgoritmo
