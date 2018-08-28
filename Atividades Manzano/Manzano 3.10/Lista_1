@@ -1,0 +1,33 @@
+Algoritmo "Soma_produto"
+// Professor   : Cheli Mendes
+// Função      : Realiza a soma e o produto das variáveis
+// Autor(a)    : Lucas  Vinicius
+// Data atual  : 11/09/2017
+Var
+
+A, B, C, D, P, S: real
+
+Inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa realiza a soma e o produto das variáveis fornecidas")
+
+//Entrada de dados
+escreval ("Digite o valor de A: ")
+   leia (A) //Recebe o valor da primeira variável
+escreval ("Digite o valor de B: ")
+   leia (B) //Recebe o valor da segunda variável
+escreval ("Digite o valor de C: ")
+   leia (C) //Recebe o valor da terceira variável
+escreval ("Digite o valor de D: ")
+   leia (D) //Recebe o valor da quarta variável
+   
+//Processamento de dados
+P <- A*C     //Produto da primeira variável com a terceira
+S <- B+D     //Soma da segunda variável com a quarta
+
+//Saida de dados
+escreval ("O resultado da soma foi de: ", S)         //Mostra na tela o resultado da soma
+escreval ("O resultado do produto foi de: ", P)      //Mostra na tela o resultado do produto
+
+Fimalgoritmo
