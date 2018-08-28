@@ -1,0 +1,72 @@
+algoritmo "MMC_MDC"
+// Função : Calcular o MMC e MDC de um par de numeros
+// Autor : Lucas Vinicius
+// Data : 3/6/2007
+var
+
+num1, num2, num1aux, num2aux, divi, mmc, maior, menor: Inteiro
+resposta: caracter
+
+inicio
+
+resposta <- "sim"
+divi<-2
+mmc<-1
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa calcula o MMC e MDC de um par de numeros")
+
+//Laço de repetição para executar incontáveis vezes os calculos de MMC e MDC enquanto o usuário dar a resposta positiva
+repita
+   escreval ("Informe o par de números: ")
+   leia (num1) //Recebe o primeiro numero digitado pelo usuário
+   leia (num2) //Recebe o segundo numero digitado pelo usuário
+
+   num1aux <- num1
+   num2aux <- num2
+
+   //Bloco para calcular o MMC
+   se (num1 <> 0) e (num2 <> 0) entao
+      repita
+         se (num1 mod divi = 0) ou (num2 mod divi = 0) entao
+            se (num1 mod divi = 0) entao
+               num1 <- num1 div divi
+            fimse
+            se (num2 mod divi = 0) entao
+               num2 <- num2 div divi
+            fimse
+            se (num1 <> 0) e (num2 <> 0) entao
+               mmc <- divi * mmc
+            fimse
+         fimse
+         se (num1 mod divi <> 0) e (num2 mod divi <> 0) entao
+            divi <- divi + 1
+         fimse
+         se (num1 <= 1) e (num2 <= 1) e (num1 <> 0) e (num2 <> 0) entao
+            escreval ("O MMC dos números ",num1aux," e ", num2aux," é de: ", mmc)
+         fimse
+      ate (num1 <= 1) e (num2 <= 1)
+   fimse
+   
+   //Bloco para calcular o MDC
+   se (num1aux > num2aux) entao
+      maior <- num1aux
+      menor <- num2aux
+   senao
+      maior <- num2aux
+      menor <- num1aux
+   fimse
+   enquanto (maior mod menor <> 0) faca
+      aux <- menor
+      menor <- maior mod menor
+      maior <- aux
+   fimenquanto
+   escreval ("O MDC dos números ",num1aux," e ", num2aux," é de: ", menor)
+   
+   //Linha para separar informações
+   escreval ("-----------------------------------------------------------------")
+   
+   escreval ("Deseja continuar?Sim ou nao")
+   leia (resposta) //Recebe a resposta do usuário caso ele deseje continuar ou não, caso queira, o processo é repetido
+ate (resposta = "nao")
+
+fimalgoritmo
