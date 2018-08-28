@@ -1,0 +1,49 @@
+algoritmo "calculo_salario"
+// Função : Recebe um salario digitado pelo usuário e calcula o reajuste de acordo com ele
+// Autor : Lucas Vinicius
+// Data : 12/11/2017
+
+//Sub-rotina do tipo procedimento para receber o salário e mostrar o valor final do reajuste
+procedimento resultado()
+var
+salario: real
+inicio
+escreval ("Digite seu salário")
+//Recebe o salário digitado pelo usuário
+leia (salario)
+//Mostra na tela o salário com o reajuste
+escreval (calculo(salario))
+fimprocedimento
+
+//Sub-rotina do tipo função para verificar o valor do salário, fazer o reajuste e retornar o valor
+funcao calculo(salario: real): real
+var
+reajustado: real
+inicio
+//Caso o salário seja menor que 3000, fazer um reajuste de 50% e retornar
+se (salario < 3000) entao
+   reajustado <- (salario*0.5) + salario
+   retorne reajustado
+senao
+    //Caso o salário seja esteja entre 3000 e 10000, fazer um reajuste de 20% e retornar
+   se (salario >= 3000) e (salario <= 10000) entao
+      reajustado <- (salario*0.2) + salario
+      retorne reajustado
+   senao
+      //Caso o salário seja acima de 10000, fazer um reajuste de 15% e retornar
+      reajustado <- (salario*0.15) + salario
+      retorne reajustado
+   fimse
+fimse
+fimfuncao
+
+var
+//Programa principal para chamar a sub-rotina do tipo procedimento
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa recebe um salario digitado pelo usuário e calcula o reajuste de")
+escreval ("acordo com ele")
+escreval
+//Comando para chamar(requisitar) o procedimento
+resultado()
+fimalgoritmo
