@@ -1,0 +1,25 @@
+algoritmo "Area_triangulo"
+// Função : Área de um triângulo
+// Autor : Lucas Vinicius
+// Data : 19/09/2017
+var
+
+base, altura: real
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("              Este programa calcula a área de um triângulo")
+escreval ("----------------------------------------------------------------------------------")
+
+//Entrada de dados
+escreval ("Digite o valor da base do seu triângulo: ")
+     leia (base)  //Recebe o valor da base do triângulo
+escreval ("Digite o valor da altura do seu triângulo: ")
+     leia (altura)//Recebe o valor da altura do triângulo
+     
+//Saida de dados
+//Mostra na tela a base do triângulo de acordo com os dados fornecidos
+escreval ("A área do seu triângulo é de: ",((base*altura)/2))
+
+fimalgoritmo
