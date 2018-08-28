@@ -1,0 +1,37 @@
+algoritmo "Soma_numeros"
+// Função : Efetua o somatório dos N primeiros números inteiros definidos por um operador
+// Autor : Lucas Vinicius
+// Data : 13/11/2017
+
+//Sub-rotina do tipo procedimento para requisitar o número e mostrar o resultado final
+procedimento resultado()
+var
+num: inteiro
+inicio
+escreval ("Digite um número")
+leia (num)
+escreval ("A soma dos números inteiros é de: ", calculo(num))
+fimprocedimento
+
+//Sub-rotina do tipo função para calcular a soma dos números
+funcao calculo(num: inteiro): inteiro
+var
+cont, soma: inteiro
+inicio
+repita
+   cont <- cont + 1
+   soma <- soma + cont
+ate (cont = num )
+retorne soma
+fimfuncao
+
+var
+//Programa principal para chamar a sub-rotina do tipo procedimento
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa Efetua o somatório dos N primeiros números inteiros definidos por um")
+escreval ("operador")
+escreval
+//Comando para chamar(requisitar) o procedimento
+resultado()
+fimalgoritmo
