@@ -1,7 +1,7 @@
 # :squirrel: Exercicios de lógica de programação utilizando Portugol
 Concluido | Atividade
 ------------ | -------------
-✔|Atividades Manzano
+✔|[Atividade Manzano](https://github.com/LucasVSCS/Logica_Portugol/tree/master/Atividades%20Manzano)
 ✔|Extra
 ✔|Funcoes
 ✔|Lista Desafio - Aula 04.4
