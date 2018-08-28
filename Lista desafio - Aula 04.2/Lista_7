@@ -1,0 +1,24 @@
+algoritmo "Loop_multiplicaçao"
+// Função : Lê um número e multiplica por três até o usuário não quiser mais
+// Autor : Lucas Vinicius
+// Data : 27-Sep-17
+// Seção de Declarações
+var
+
+num,resposta: inteiro
+
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Lê um número e multiplica por três até o usuário não quiser mais")
+
+//Laço de repetição/Entrada, processamento e saida de dados
+resposta <-1
+enquanto (resposta=1) faca
+   escreval ("Digite um número")
+   leia (num)
+   escreval ("O resultado do seu número digitado por três é: ",num*3)
+   escreval ("Digite '1' para continuar ou qualquer outro número para parar")
+   leia (resposta) //Recebe a reposta do usuário para continuar o loop ou não
+fimenquanto
+
+fimalgoritmo
