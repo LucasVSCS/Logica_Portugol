@@ -1,0 +1,40 @@
+Algoritmo "Celsius"
+// Descrição   : Converte a temperatura em Fahrenheit para graus celsius
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 13/11/2017
+
+//Sub-rotina do tipo procedimento para requisitar a temperatura em fahrenheit e mostrar o resultado final
+procedimento resultado()
+var
+fahr: real
+inicio
+//Entrada de dados
+escreval ("Digite a temperatura em graus Fahrenheit: ")
+//Recebe a temperatura em graus Fahrenheit
+leia (fahr)
+//Saida de dados
+//Mostra na tela os graus ja convertidos em Celsius
+escreval ("Sua temperatura convertida em graus celsius é de: ", calculo(fahr))
+fimprocedimento
+
+//Sub-rotina do tipo função para converter a temperatura de fahrenheit para celsius
+funcao calculo(fahr: real): real
+var
+cel: real
+inicio
+//Processamento de dados
+//Converte os graus Fahrenheit em Celsius
+cel <- (fahr - 32) * (5/9)
+//Retorna o valor final da função
+retorne cel
+fimfuncao
+
+var
+//Programa principal para chamar a sub-rotina do tipo procedimento
+Inicio
+//Mostra na tela os graus ja convertidos em Fahrenheit
+escreval ("Este programa converte a temperatura em Fahrenheit para graus celsius")
+escreval
+//Comando para chamar(requisitar) o procedimento
+resultado()
+fimalgoritmo
