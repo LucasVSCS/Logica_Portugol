@@ -1,0 +1,48 @@
+Algoritmo "Ficha_5"
+// Descrição   : Faz uma ficha com informações de 5 alunos e mostra a maior idade entre os alunos
+// Autor       : Lucas Vinicius
+// Data atual  : 30/10/2017
+
+//Registro para classificar os 3 tipos de informações à serem adicionadas no vetor
+tipo
+
+   ficha=registro
+      nome: caracter
+      idade: inteiro
+      altura: real
+   fimregistro
+
+Var
+
+   aluno: vetor[1..5] de ficha
+   cont: inteiro
+   resultado: real
+
+
+Inicio
+//Mostra na tela a funcionalidade do programa
+  escreval ("Este programa faz uma ficha com informações de 5 alunos e mostra a maior idade entre os alunos ")
+
+   //Laço de repetição para receber as informações do usuário: Nome, idade e altura
+    para cont de 1 ate 5 faca
+     //Recebe o nome digitado pelo usuário
+      escreval ("Digite o nome do aluno: ")
+       leia (aluno[cont].nome)
+       //Recebe a idade digitado pelo usuário
+        escreval ("Digite a idade do aluno: ")
+         leia (aluno[cont].idade)
+          //Recebe a altura digitado pelo usuário
+           escreval ("Digite a altura do aluno: ")
+            leia (aluno[cont].altura)
+      escreval
+      
+            //Condicional para verificar a maior idade e armazena-la
+             se (aluno[cont].idade > resultado) entao
+              resultado <- aluno[cont].idade
+             fimse
+      
+     fimpara
+              //Mostra na tela a maior idade dentro os alunos
+               escreval ("A maior idade dentre os alunos é: ", resultado)
+
+Fimalgoritmo
