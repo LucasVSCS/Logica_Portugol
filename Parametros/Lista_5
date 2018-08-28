@@ -1,0 +1,31 @@
+algoritmo "Tabuada"
+// Função : Recebe um número como parâmetro e escreve a tabuada desse número
+// Autor : Lucas Vinicius
+// Data : 14/11/2017
+
+//Sub-rotina do tipo procedimento para ser calculada a tabuada do número digitado pelo usuário e mostrar seu resultado
+procedimento resultado(num: inteiro)
+var
+cont, result: inteiro
+inicio
+para cont de 1 ate 10 faca
+result <- num * cont
+escreva (result)
+fimpara
+fimprocedimento
+
+var
+num: inteiro
+//Programa principal para chamar o procedimento
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa recebe um número como parâmetro e escreve a tabuada desse número")
+escreval
+
+//Recebe o número digitado pelo usuário para ser feito a tabuada do mesmo
+escreval ("Digite um número")
+leia (num)
+
+//Comando para chamar(requisitar) o procedimento
+resultado(num)
+fimalgoritmo
