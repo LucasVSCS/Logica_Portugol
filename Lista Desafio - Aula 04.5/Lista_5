@@ -1,0 +1,58 @@
+algoritmo "Informacoes_1_a_10"
+// Função : Gera uma tabela com os números de 1 a 10 e mostra suas informações
+// Autor : Lucas Vinicius
+// Data : 22/10/2017
+var
+
+num, cont, teste, cont2, cont3, cont4, soma: inteiro
+fatorial: real
+
+inicio
+
+fatorial <- 1
+cont<- 2
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa gera uma tabela com os números de 1 a 10 e mostra suas informações")
+
+//Contador para gerar os 10 numeros
+para num de 1 ate 10 faca
+   //Mostra o numero na tela
+   escreval ("Numero: ", num)
+   //Mostra o quadrado do numero na tela
+   escreval ("Quadrado: ", num^2)
+   //Mostra o cubo do numero na tela
+   escreval ("Cubo: ", num^3)
+
+   //Laço de repetição para descobrir o fatorial do numero
+   enquanto (cont<=num) faca
+      fatorial <- fatorial * cont     //Calculo fatorial
+      cont <- cont + 1
+      escreval ("Fatorial: ",fatorial) //Mostra na tela o fatorial do numero
+   fimenquanto
+   
+   //Laço de repetição para descobrir quais divisores o numero tem
+   para cont2 de 1 ate num faca
+      se (num mod cont2  = 0) entao
+         escreval ("Divisores: ", cont2) //Mostra na tela os divisores do numero
+      fimse
+   fimpara
+   
+   //Laço de repetição para descobrir se o número é primo ou não
+   para cont3 de 1 ate num faca
+      soma <- 0
+   fimpara
+   para cont4 de 1 ate cont3 faca
+      se (num mod cont4 = 0) entao
+         soma <- soma + 1
+      fimse
+   fimpara
+   se (soma=2) entao
+      escreval ("Primo: Sim") //Caso seja primo mostra a resposta positiva na tela
+   senao
+      escreval ("Primo: Não") //Caso não seja, mostra a resposta negativa
+   fimse
+   //Linha para separar as informações de um numero do seguinte
+   escreval ("--------------------------------------------------------------------------------")
+fimpara
+
+fimalgoritmo
