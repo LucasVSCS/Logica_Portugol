@@ -1,0 +1,41 @@
+algoritmo "Calculo_subrotina"
+// Função : Recebe três números, soma e mostra seu cubo
+// Autor : Lucas Vinicius
+// Data : 13/11/2017
+
+//Sub-rotina do tipo procedimento para receber os valores e mostrar o resultado final
+procedimento resultado()
+var
+A, B, C: real
+inicio
+escreval ("Digite o valor de A: ")
+//Recebe o valor de A
+leia (A)
+escreval ("Digite o valor de B: ")
+//Recebe o valor de B
+leia (B)
+escreval ("Digite o valor de C: ")
+//Recebe o valor de C
+leia (C)
+//Mostra na tela o resultado final
+escreval ("O resultado é: ", calculo(A, B, C))
+fimprocedimento
+
+//Sub-rotina do tipo de função para calcular a soma dos três números e retornar o valor final
+funcao calculo(A, B, C: real): real
+var
+result: real
+inicio
+result <- A + B + C
+result <- result ^ 2
+retorne result
+fimfuncao
+
+var
+//Programa principal para chamar o procedimento
+inicio
+escreval ("Este programa recebe três números, soma e mostra seu cubo")
+escreval
+//Comando para requisitar(chamar) o procedimento
+resultado()
+fimalgoritmo
