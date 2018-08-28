@@ -1,0 +1,25 @@
+algoritmo "Base_potencia"
+// Função : Calcula o valor de uma base qualquer sobre um expoente qualquer
+// Autor : Lucas Vincius
+// Data : 02/10/2017
+// Seção de Declarações
+var
+
+base, potencia: real
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa calcula o valor de uma base qualquer sobre um expoente qualquer")
+
+//Entrada de dados
+escreval ("Digite o valor da base")
+   leia (base)  //Recebe o valor da base
+escreval ("Digite o valor da potência")
+   leia (potencia) //Recebe o valor da potência
+
+//Saida de dados
+//Mostra na tela o resultado a operação
+escreval ("O resultado da sua expressão é :", exp(base,potencia))
+
+fimalgoritmo
