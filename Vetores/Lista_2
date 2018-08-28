@@ -1,0 +1,27 @@
+algoritmo "Soma_vetor"
+// Função : Lê 10 números, armazena no vetor e os soma
+// Autor : Lucas Vinicius
+// Data : 23/10/2017
+var
+
+cont, soma: inteiro
+num: vetor [1..10] de inteiro
+
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê 10 números, armazena no vetor e os soma")
+
+//Laço de repetição para receber e somar os números
+para cont de 1 ate 10 faca
+   escreval ("Digite um numero: ")
+   leia (num[cont]) //Recebe o número digitado pelo usuário e armazena na posição do contador
+   soma <- num[cont] + soma //Soma os vetores
+fimpara
+
+//Linha para separar informações
+escreval ("-------------------------------------------------------------------")
+
+//Mostra na tela a soma dos vetores
+escreva ("A soma dos números presentes no vetor é de: ", soma)
+
+fimalgoritmo
