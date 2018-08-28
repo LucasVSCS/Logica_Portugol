@@ -1,0 +1,42 @@
+algoritmo "Nivel_QI"
+// Função : Lê o QI de uma pessoa e escreva uma mensagem baseado nele
+// Autor : Lucas Vinicius
+// Data : 23-Sep-17
+// Seção de Declarações
+var
+
+QI:inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("    Este programa lê o QI de uma pessoa e escreva uma mensagem baseado nele")
+
+//Entrada de dados
+escreval ("Digite o valor do seu QI: ")
+leia (QI) //Recebe o valor do QI digitado pelo usuário
+
+//Processamento e saida de dados
+se (QI>0) e (QI<=30) entao
+   escreval ("Ameba")  //Caso o valor do QI da pessoa seja entre 1 e 30 então mostrar 'Ameba'
+senao
+   se (QI>30) e (QI<=50) entao
+      escreval ("Débil Mental")   //Caso seja entre 31 e 50 então mostrar 'Débil Mental'
+   senao
+      se (QI>50) e (QI<=70) entao
+         escreval ("Regular")    //Caso seja entre 51 e 70 então mostrar 'Regular'
+      senao
+         se (QI>70) e (QI<=100) entao
+            escreval ("Normal")   //Caso seja entre 71 e 100 então mostrar 'Normal'
+         senao
+            se (QI>100) e (QI<=150) entao
+               escreval ("Gênio")    //Caso seja entre 101 e 150 então mostrar 'Gênio'
+            senao
+               escreval ("QI inválido")    //Caso o valor seja diferente de 1 a 150 mostrar 'QI inválido'
+            fimse
+         fimse
+      fimse
+   fimse
+fimse
+
+fimalgoritmo
