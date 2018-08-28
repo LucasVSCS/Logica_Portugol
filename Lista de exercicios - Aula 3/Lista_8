@@ -1,0 +1,42 @@
+algoritmo "Orçamento_locadora"
+// Função : Orçamento locadora de fitas
+// Autor : Lucas Vinicius
+// Data : 20-Sep-17
+// Seção de Declarações 
+var
+
+qtnd_fitas, preco_fita, faturamento_ano, multa, faturamento_multa, qtnd_total: real
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa faz o cálculo orçamentario de uma locadora de fitas")
+escreval ("----------------------------------------------------------------------------------")
+
+//Entrada de dados
+escreval ("Digite a quantidade de fitas disponiveis na locadora: ")
+   leia (qtnd_fitas) //Recebe a quantidade de fitas disponiveis na locadora
+escreval ("Digite o valor cobrado por fita: ")
+   leia (preco_fita) //Recebe o preço por fita cobrado pela locadora
+   
+//Processamento de dados
+//Calcula o faturamento anual da locadora
+faturamento_ano <- ((qtnd_fitas/3)*12)* preco_fita
+//Calcula o valor da multa e acrescenta ao valor da fita
+multa <- (preco_fita*0.10) + preco_fita
+//Calcula o valor ganho com multas por mês
+faturamento_multa <- (preco_fita*0.10)* (qtnd_fitas/10)
+//Calcula a quantidade total de fitas que a locadora terá no final do ano
+qtnd_total <- (qtnd_fitas - (qtnd_fitas*0.02))+(qtnd_fitas/10)
+
+//Saida de dados
+//Mostra na tela o faturamento anual da locadora
+escreval ("A empresa de locação de fitas ganha: R$", faturamento_ano, " por ano")
+//Mostra na tela o preço da fita com o acréscimo da multa
+escreval ("O preço da fita com o adicional da multa ficará de: R$", multa)
+//Mostra na tela o ganho total com multas por mês da locadora
+escreval ("O faturamento por mês com a multa de fitas será de: R$", faturamento_multa)
+//Mostra na tela quantidade total de fitas que locadora terá no final do ano
+escreval ("A quantidade total de fitas na locadora no final do ano é de: ", qtnd_total)
+
+fimalgoritmo
