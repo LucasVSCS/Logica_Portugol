@@ -1,0 +1,49 @@
+algoritmo "Tabela_Produtos"
+// Função : Lê o número digitado pelo usúario e apresenta o produto conforme a tabela
+// Autor : Lucas Vinicius
+// Data : 21/09/2017
+// Seção de Declarações
+var
+
+codigo: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê o número digitado pelo usúario e apresenta o produto da tabela")
+escreval
+
+//Mostra na tela a tabela dos códigos dos produtos
+escreval ("-------Tabela--------")
+escreval ("1 – Sabão")
+escreval ("2 – Vassoura")
+escreval ("3 – Detergente")
+escreval ("---------------------")
+
+//Entrada de dados
+
+//Recebe o valor do código do produto digitado pelo usuário
+escreval ("Digite o codigo do produto: ")
+  leia (codigo)
+
+//Processamento de dados
+
+//Caso o código digitado pelo usuário seja 1 mostrar na tela o produto 'Sabão'
+se (codigo = 1) entao
+   escreval ("Sabão")
+senao
+     //Caso seja 2 mostrar na tela o produto 'Vassoura'
+   se (codigo = 2) entao
+      escreval ("Vassoura")
+   senao
+       //Caso seja 3 mostrar na tela o produto 'Detergente'
+      se (codigo = 3) entao
+         escreval ("Detergente")
+      senao
+          //Caso seja diferente de 1, 2 ou 3 mostrar que o código é inválido
+         escreval ("Código inválido")
+      fimse
+   fimse
+fimse
+
+fimalgoritmo
