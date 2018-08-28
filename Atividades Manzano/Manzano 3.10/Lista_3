@@ -1,0 +1,51 @@
+Algoritmo "Eleiçao_sindical"
+// Professor   : Cheli Mendes
+// Função      : Calcula os votos de uma eleição sindical
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 11/09/2017
+Var
+
+candidato_1, candidato_2, candidato_3, brancos, nulos, total_eleitores, percentual_1: real
+percentual_2, percentual_3, percentual_branco, percentual_nulo: real
+
+Inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("       Este programa foi criado para realizar uma eleição sindical")
+
+//Entrada de dados
+escreval ("Digite a quantidade de votos que o primeiro candidato recebeu: ")
+   leia (candidato_1) //Recebe a quantidade de votos do primeiro candidato
+escreval ("Digite a quantidade de votos que o segundo candidato recebeu: ")
+   leia (candidato_2) //Recebe a quantidade de votos do segundo candidato
+escreval ("Digite a quantidade de votos que o terceiro candidato recebeu: ")
+   leia (candidato_3) //Recebe a quantidade de votos do terceiro candidato
+escreval ("Digite a quantidade de votos em branco: ")
+   leia (brancos)     //Recebe a quantidade de votos brancos
+escreval ("Digite a quantidade de votos nulos: ")
+   leia (nulos)       //Recebe a quantidade de votos nulos
+
+//Processamento de dados
+total_eleitores  <- Candidato_1+Candidato_2+Candidato_3+Brancos+Nulos  //Calcula a quantidade total de eleitores
+percentual_1 <- Candidato_1/total_eleitores  //Calcula o percentual de votos do primeiro candidato
+percentual_2 <- Candidato_2/total_eleitores  //Calcula o percentual de votos do segundo candidato
+percentual_3 <- Candidato_3/total_eleitores  //Calcula o percentual de votos do terceiro candidato
+percentual_branco <- brancos/total_eleitores //Calcula o percentual de votos brancos
+percentual_nulo <-  nulos/total_eleitores    //Calcula o percentual de votos nulos
+
+//Saida de dados
+
+//Mostra na tela o total de eleitores
+escreval ("O numero total de eleitores foi de: ", total_eleitores)
+//Mostra na tela o percentual de votos do primeiro candidato
+escreval ("O percentual de votos para o primeiro candidato foi de: ", percentual_1*100:2:2, "%")
+//Mostra na tela o percentual de votos do segundo candidato
+escreval ("O percentual de votos para o segundo candidato foi de: ", percentual_2*100:2:2, "%")
+//Mostra na tela o percentual de votos do terceiro candidato
+escreval ("O percentual de votos para o terceiro candidato foi de: ", percentual_3*100:2:2, "%")
+//Mostra na tela o percentual de votos brancos
+escreval ("O percentual de votos brancos foi de: ", percentual_branco*100:2:2, "%")
+//Mostra na tela o percentual de votos nulos
+escreval ("O percentual de votos nulos foi de: ", percentual_nulo*100:2:2, "%")
+
+Fimalgoritmo
