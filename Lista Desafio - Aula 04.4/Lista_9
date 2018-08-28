@@ -1,0 +1,30 @@
+algoritmo "Infinito_media"
+// Função : Lê os números digitados pelo usuário até ele não querer mais e calcula a media
+// Autor : Lucas Vinicius
+// Data : 29-Sep-17
+// Seção de Declarações 
+var
+
+num, resposta, mediador, soma: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Lê os números digitados pelo usuário até ele não querer mais e calcula a media")
+
+//Laço de repetição/Entrada e processamento de dados
+resposta <-1
+enquanto (resposta=1) faca
+   escreval ("Digite um número")
+   leia (num)
+   soma <- num+soma //Calcula a soma dos números
+   mediador <- mediador+1  //Medidor para contar a quantidade de números lidos
+   escreval ("Digite '1' para continuar ou qualquer outro número para parar")
+   leia (resposta) //Recebe a reposta do usuário para continuar o loop ou não
+fimenquanto
+
+//Saida de dados
+//Mostra na tela a media dos valores digitados
+escreval ("O resultado da soma dos seus números digitados: ",soma/mediador)
+
+fimalgoritmo
