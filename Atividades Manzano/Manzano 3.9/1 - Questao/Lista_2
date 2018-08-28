@@ -1,0 +1,27 @@
+Algoritmo "SOMA_DIVISAO_MULTIPLICAÇAO"
+// Professora  : Cheli Mendes
+// Descrição   : 43[55/(30+2*a)]
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 29-Aug-17
+Var
+
+a, result1, result2, resultado: real
+
+Inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa resolve uma operação matemática")
+
+escreval ("Digite o valor de a: ")
+leia (a)  //Recebe o valor da variável
+
+//Processamento de dados
+result1 <- 30 + 2 * a            //Retirando os parenteses da conta
+result2 <- 55 / result1          //Retirando os cochetes da conta
+resultado <- 43 * result2        //Terminando a conta
+
+//Saida de dados
+//Mostra na tela o resultado da operação
+escreval ("O resultado da sua conta é:", resultado)
+
+Fimalgoritmo
