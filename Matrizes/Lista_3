@@ -1,0 +1,45 @@
+algoritmo "Matriz_4x3"
+// Função : Lê uma matriz 4X3 e mostra qual é o elemento armazenado em uma linha e coluna fornecidas pelo usuário
+// Autor : Lucas Vinicius
+// Data : 29/10/2017
+var
+
+matriz: vetor[1..4 , 1..3] de inteiro
+coluna, linha, lin_usu, colu_usu: inteiro
+
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê uma matriz 4X3 e mostra qual é o elemento armazenado em uma")
+escreval ("linha e coluna fornecidas pelo usuário")
+escreval
+
+//Laço de repetição para receber as 3 colunas e as 4 linhas da matriz
+para coluna de 1 ate 3 faca
+   para linha de 1 ate 4 faca
+      escreval ("Digite o valor da posição [", linha, ",", coluna, "]: ")
+      leia (matriz[linha, coluna]) //Recebe a coluna e a linha digitado pelo usuário
+   fimpara
+fimpara
+
+//Laço de repetição para criar a matriz 4x3
+para linha de 1 ate 4 faca
+     para coluna de 1 ate 3 faca
+          escreva(matriz[linha,coluna]:6)
+     fimpara
+          escreval
+fimpara
+
+
+escreval ("Digite qual posição de linha você deseja visualizar: ")
+leia (lin_usu) //Solicita ao usuário a linha que ele deseja visualizar
+escreval ("Digite qual posição de coluna você deseja visualizar: ")
+leia (colu_usu) //Solicita ao usuário a coluna que ele deseja visualizar
+
+//Mostra na tela o elemento armazenado na linha e coluna digitada pelo usuário
+para linha de lin_usu ate lin_usu faca
+     para coluna de colu_usu ate colu_usu faca
+escreval("O número da posição [",lin_usu, ",",colu_usu, "] é: ", matriz[linha,coluna])
+      fimpara
+fimpara
+
+fimalgoritmo
