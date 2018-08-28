@@ -1,0 +1,34 @@
+Algoritmo "EQUACAO_SEGUNDO_GRAU"
+// Professor   : Cheli Mendes
+// Descrição   : Equação de segundo grau
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 30-Aug-17
+Var
+
+a, b, c, result1, result2, result3, result4: real
+
+Inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("ESTE PROGRAMA FOI CRIADO PARA RESOLVER EQUAÇÕES DE SEGUNDO GRAU")
+
+//Entrada de dados
+escreval ("Escreva seu valor para a: ")
+leia (a) //Recebe o valor da primeira variável
+escreval ("Escreva seu valor para b: ")
+leia (b) //Recebe o valor da segunda variável
+escreval ("Escreva seu valor para c: ")
+leia (c) //Recebe o valor da terceira variável
+
+//Processamento de dados
+result1 <- - b + raizq(b^2-4*a*c)
+result2 <- result1 /2*a
+result3 <- - b - raizq(b^2-4*a*c)
+result4 <- result3 /2*a
+
+//Saida de dados
+//Mostra na tela o valor de x1
+escreva ("As raizes da sua equação são: ", result2)
+//Mostra na tela o valor de x2
+escreva (" e", result4)
+
+Fimalgoritmo
