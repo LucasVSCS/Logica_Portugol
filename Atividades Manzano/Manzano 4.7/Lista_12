@@ -1,0 +1,32 @@
+algoritmo "Masc_Fem"
+// Função : Lê o nome de uma pessoa e mostra na tela uma mensagem de saudação
+// Autor : Lucas Vinicius
+// Data : 01-Oct-17
+// Seção de Declarações
+var
+
+nome, sexo: caracter
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê o nome de uma pessoa e mostra na tela uma mensagem de saudação")
+
+//Entrada de dados
+escreval ("Digite seu nome")
+   leia (nome) //Recebe o nome do usuário
+escreval ("Digite o seu sexo(Masculino ou Feminino)")
+   leia (sexo) //Recebe o gênero do usuário
+
+//Saida de dados
+se (sexo="Masculino") entao
+   escreval ("Ilmo Sr. ", nome)
+senao
+   se (sexo="Feminino") entao
+      escreval ("Ilmo Sra. ", nome)
+   senao
+      escreval ("Dado incorreto")
+   fimse
+fimse
+
+fimalgoritmo
