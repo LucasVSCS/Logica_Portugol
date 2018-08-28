@@ -1,0 +1,39 @@
+algoritmo "sub_conversao"
+// Função : Sub-rotina que converte segundos em horas e minutos
+// Autor : Lucas Vinicius
+// Data : 04/11/2017
+var
+
+//Procedimento para receber os segundos digitados pelo usuário e amostrar na tela o resultado final da operação
+procedimento resultado() //Nome da sub-rotina e seu parametro(não possui)
+var segundos: real  //Variaveis declaradas para serem usadas dentro da sub-rotina
+inicio
+escreval ("Digite a quantidade de segundos: ")
+leia (segundos)  //Recebe os segundos digitados pelo usuário
+//Mostra na tela os segundos e os minutos e as horas convertidos dos segundos
+escreval (segundos, " segundo(s) são: ",horas(segundos):2:2," hora(s) ou ", minutos(segundos):2:2, " minuto(s)")
+fimprocedimento
+
+//Função para calcular os minutos
+funcao minutos(segundos: real): real  //Nome da sub-rotina, suas variaveis e de que tipo sera seu retorno
+var
+conversao_minutos: real  //Variavel declarada para ser usada dentro da sub-rotina
+inicio
+conversao_minutos <- segundos/60 //Conversão dos segundos em minutos
+retorne conversao_minutos  //Variavel a ser retornada dentro da sub-rotina
+fimfuncao
+
+//Função para calcular os segundos
+funcao horas(segundos: real): real
+var
+conversao_horas: real
+inicio
+conversao_horas <- minutos(segundos)/60 //Conversão dos segundos em horas
+retorne conversao_horas //Variavel a ser retornada dentro da sub-rotina
+fimfuncao
+
+
+inicio
+//Linha para chamar(requisitar) o procedimento
+resultado
+fimalgoritmo
