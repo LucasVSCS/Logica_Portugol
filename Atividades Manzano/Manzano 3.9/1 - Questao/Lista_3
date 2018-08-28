@@ -1,0 +1,30 @@
+Algoritmo "SOMA_SUBTRACAO_EXPONENCIACAO_RAIZ_DIVISAO"
+// Professora  : Cheli Mendes
+// Descrição   : [2x²-3x^(x+1)/2] + Raizq(x+1)/x
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 29-Aug-17
+Var
+
+h, potenc, result1, result2, result3, resultado: real
+
+Inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa resolve uma operação matemática")
+
+//Entrada de dados
+escreval ("Digite o valor de h: ")
+  leia (h)  //Recebe o valor da variável
+
+//Processamento de dados
+potenc <- h+1                         //Declarando a variavel da potencia
+result1 <- 2*h^2 - 3 * h^potenc / 2   //Resolvendo a primeira divisão
+result2 <- raizq(h+1)                 //Retirando a raiz quadrada
+result3 <- result2 / h                //Resolvendo a segunda divisão
+resultado <- result1 + result3        //Soma do resultado das divisões
+
+//Saida de dados
+//Mostra na tela o resultado a operação
+escreval ("Seu resultado é: ", resultado:2:2)
+
+Fimalgoritmo
