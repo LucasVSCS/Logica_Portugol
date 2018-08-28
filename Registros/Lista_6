@@ -1,0 +1,48 @@
+Algoritmo "Ficha_10"
+// Descrição   : Faz uma ficha com informações de 10 alunos e exibe a soma das notas dos alunos
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 30/10/2017
+
+//Registro para classificar os 4 tipos de informações à serem adicionadas no vetor
+tipo
+
+   ficha=registro
+      nome: caracter
+      idade: inteiro
+      altura: real
+      nota: real
+   fimregistro
+
+Var
+
+   aluno: vetor[1..10] de ficha
+   cont: inteiro
+    soma: real
+
+Inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa faz uma ficha com informações de 10 alunos e exibe a soma das notas dos alunos")
+
+   //Laço de repetição para receber as informações do usuário: Nome, idade e altura
+   para cont de 1 ate 10 faca
+     //Recebe o nome digitado pelo usuário
+      escreval ("Digite o nome do aluno: ")
+       leia (aluno[cont].nome)
+        //Recebe a idade digitado pelo usuário
+         escreval ("Digite a idade do aluno: ")
+          leia (aluno[cont].idade)
+           //Recebe a altura digitado pelo usuário
+            escreval ("Digite a altura do aluno: ")
+             leia (aluno[cont].altura)
+             //Recebe a nota digitada pelo usuário
+              escreval ("Digite a nota do aluno: ")
+               leia (aluno[cont].nota)
+      escreval
+
+      //Soma as notas dos usuários
+      soma <- aluno[cont].nota + soma
+   fimpara
+
+   //Mostra na tela a soma das notas
+   escreval ("A media das notas é: ", soma)
+Fimalgoritmo
