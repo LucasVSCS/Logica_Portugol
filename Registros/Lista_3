@@ -1,0 +1,44 @@
+Algoritmo "Ficha_5"
+// Descrição   :  Faz uma ficha com informações de 5 alunos e tira a media das alturas
+// Autor       : Lucas Vinicius
+// Data atual  : 30/10/2017
+
+//Registro para classificar os 3 tipos de informações à serem adicionadas no vetor
+tipo
+
+   ficha=registro
+      nome: caracter
+      idade: inteiro
+      altura: real
+   fimregistro
+
+Var
+
+   aluno: vetor[1..5] de ficha
+   cont: inteiro
+   soma: real
+
+Inicio
+   //Mostra na tela a funcionalidade do programa
+   escreval ("Este programa faz uma ficha com informações de 5 alunos e tira a media das alturas")
+
+   //Laço de repetição para receber as informações do usuário: Nome, idade e altura
+   para cont de 1 ate 5 faca
+      //Recebe o nome digitado pelo usuário
+       escreval ("Digite o nome do aluno: ")
+        leia (aluno[cont].nome)
+        //Recebe a idade digitado pelo usuário
+         escreval ("Digite a idade do aluno: ")
+          leia (aluno[cont].idade)
+          //Recebe a altura digitado pelo usuário
+           escreval ("Digite a altura do aluno: ")
+            leia (aluno[cont].altura)
+      escreval
+      
+      //Soma as alturas dos usuários
+       soma <- aluno[cont].altura + soma
+   fimpara
+   //Tira a media das alturas e mostra na tela
+    escreval ("A media da altura dos alunos é: ", soma/5)
+
+Fimalgoritmo
