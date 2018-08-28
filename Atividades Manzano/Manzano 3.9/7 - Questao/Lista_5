@@ -1,0 +1,35 @@
+Algoritmo "Custo_viagem"
+// Professor   : Cheli Mendes
+// Descrição   : Calcula a quantidade de litros gastos em uma viagem
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 04/09/2017
+Var
+
+horas, velocidade, distancia, litros_usados: real
+
+Inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("       Este programa calcula a quantidade de litros gastos em uma viagem")
+
+//Entrada de dados
+escreval ("Digite o tempo gasto na viagem: ")
+   leia (horas) //Recebe as horas gastas na viagem
+escreval ("Digite a velocidade media usada na viagem")
+   leia (velocidade) //Recebe a velocidade media usada na viagem
+   
+//Processamento de dados
+distancia <- horas*velocidade //Calcula a distancia total percorrida na viagem
+litros_usados <- distancia / 12 //Calcula a quantidade total de litros gastos na viagem
+
+//Saida de dados
+//Mostra na tela a velocidade média da viagem
+escreval ("A velocidade media da sua viagem foi de: ", velocidade)
+//Mostra na tela o tempo total gasto na viagem
+escreval ("O tempo gasto na sua viagem foi de: ", tempo)
+//Mostra na tela a distancia total percorrida na viagem
+escreval ("A distancia percorrida durante a viagem foi de:", distancia)
+//Mostra na tela a quantidade total de litros usados na viagem
+escreval ("A quantidade de litros gasto foi de: ", litros_usados)
+
+Fimalgoritmo
