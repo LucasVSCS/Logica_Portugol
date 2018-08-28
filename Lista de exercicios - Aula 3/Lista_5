@@ -1,0 +1,31 @@
+algoritmo "Saldo_e_rendimento"
+// Função : Saldo e rendimento de uma aplicação
+// Autor : Lucas Vinicius
+// Data : 19/09/2017
+// Seção de Declarações
+var
+
+saldo, rendimento: real
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa receba o saldo de uma aplicação e imprime o valor aplicado e o")
+escreval ("valor com rendimento de 5%")
+escreval ("----------------------------------------------------------------------------------")
+
+//Entrada de dados
+escreval ("Digite o valor do saldo : ")
+  leia (saldo) //Recebe o valor da aplicação
+
+//Processamento de dados
+//Calcula o rendimento de 5% com a aplicação
+rendimento <- (saldo*0.05)
+
+//Saida de dados
+//Mostra na tela o rendimento do investimento
+escreval ("Você rendeu: ", rendimento," reais")
+//Mostra na tela o valor do investimento somado ao saldo investido
+escreval ("Com o acrescimo de 5%, você tem agora: ", ((rendimento)+saldo))
+
+fimalgoritmo
