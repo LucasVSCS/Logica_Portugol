@@ -1,0 +1,37 @@
+algoritmo "semnome"
+// Função : Lê 2 valores de alturas, armazena no vetor e apresenta uma informação na tela de acordo o requisitado
+// Autor : Lucas Vinicius
+// Data : 23/10/2017
+// Seção de Declarações
+var
+
+altura: vetor [1..2] de real
+
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê 2 valores de alturas, armazena no vetor e apresenta uma")
+escreval ("informação na tela de acordo o requisitado")
+
+//Linha para separar informações
+escreval ("-----------------------------------------------------------------------------")
+
+
+escreval ("Digite o valor da primeira altura:")
+leia (altura[1]) //Recebe o valor da primeira altura e armazena no vetor
+escreval ("Digite o valor da segunda altura:")
+leia (altura[2]) //Recebe o valor da segunda altura e armazena no vetor
+
+//Caso a primeira altura seja maior que a segunda, realiza essa ação
+se (altura[1] > altura[2]) entao
+   escreval ("A primeira altura é maior")
+senao
+     //Caso as alturas sejam iguais, realiza essa ação
+   se (altura[1] = altura[2]) entao
+      escreval ("As alturas são iguais, a soma delas é de: ", altura[1] + altura[2])
+   senao
+        //Caso a segunda altura seja maior que a primeira, realiza essa ação
+      escreval ("A segunda altura é maior")
+   fimse
+fimse
+
+fimalgoritmo
