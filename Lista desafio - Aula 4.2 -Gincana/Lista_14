@@ -1,0 +1,27 @@
+algoritmo "1_9"
+// Função : Verifica se o número está entre 1 e 9 e mostra uma mensagem na tela de acordo com isso
+// Autor : Lucas Vinicius
+// Data : 24-Sep-17
+// Seção de Declarações
+var
+
+num: real
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa verifica se o número está entre 1 e 9 e mostra uma mensagem na tela de acordo com isso")
+
+//Entrada de dados
+escreval ("Digite um valor entre 1 e 9")
+leia (num) //Recebe o número digitado pelo usuário
+
+//Saida de dados
+//Mostra na tela a mensagem de acordo com a condição
+se (num>=1) e (num<=9) entao
+   escreval ("O valor está na faixa permitida")
+senao
+   escreval ("O valor está fora da faixa permitida")
+fimse
+
+fimalgoritmo
