@@ -1,0 +1,22 @@
+algoritmo "Impar_0_20"
+// Função : Verifica os números impares de zero até vinte e os mostra na tela
+// Autor : Lucas Vinicius
+// Data : 01-Oct-17
+// Seção de Declarações
+var
+
+num: inteiro
+
+inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa verifica os números impares de zero até vinte e os mostra na tela")
+
+//Processamento de dados
+para num de 1 ate 20 faca
+   se (num mod 2=1) entao
+      escreval (num, " é ímpar")
+   fimse
+fimpara
+
+fimalgoritmo
