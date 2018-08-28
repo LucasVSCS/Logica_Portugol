@@ -1,0 +1,38 @@
+algoritmo "positivo_negativo"
+// Função : Função que recebe um valor inteiro e verifica se o valor é positivo ou negativo, caso seja positivo, volta o valor 1, caso seja negativo, volta 0
+// Autor : Lucas Vinicius
+// Data : 06/11/2017
+
+//Sub-rotina do tipo procedimento para receber o número e mostrar na tela o resultado final
+procedimento receber()
+var num: inteiro
+inicio
+escreval ("Digite um número: ")
+leia (num) //Recebe o número digitado pelo usuário
+escreval (checar(num)) //Mostra na tela 1 caso o número seja positivo ou 0 caso seja negativo
+fimprocedimento
+
+//Sub-rotina do tipo função para checar se o número é positivo ou negativo
+funcao checar(num: inteiro): inteiro
+var
+inicio
+se (num > 0) entao
+   retorne 1   //Caso seja positivo retorna o valor 1
+senao
+   se (num < 0) entao
+      retorne 0  //Caso seja negativo retorna o valor 0
+   fimse
+fimse
+fimfuncao
+
+var
+//Programa principal para requisitar o procedimento
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa requisita uma função que recebe um valor inteiro e verifica se o")
+escreval ("valor é positivo ou negativo, caso seja positivo, volta o valor 1, caso seja")
+escreval ("negativo, volta 0")
+escreval
+//Comando para chamar(requisitar) o procedimento
+receber
+fimalgoritmo
