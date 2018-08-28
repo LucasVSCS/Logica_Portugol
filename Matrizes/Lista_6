@@ -1,0 +1,55 @@
+algoritmo "Matriz_Soma"
+// Função : Lê duas matrizes A e B com 15 elementos cada e constroi uma matriz C, sendo esta a junção das duas outras matrizes
+// Autor : Lucas Vinicius
+// Data : 26/10/2017
+var
+
+matriz_1, matriz_2: vetor[1..5 , 1..5] de inteiro
+coluna, linha: inteiro
+
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa lê duas matrizes A e B com 15 elementos cada e constroi uma matriz")
+escreval ("C, sendo esta a junção das duas outras matrizes")
+escreval
+
+//Laço de repetição para receber as 3 colunas e as 5 linhas da segunda matriz
+para coluna de 1 ate 3 faca
+   para linha de 1 ate 5 faca
+      escreval ("Digite o valor da posição [", linha, ",", coluna, "] da primeira matriz: ")
+      leia (matriz_1[linha, coluna]) //Recebe a coluna e a linha digitado pelo usuário
+   fimpara
+fimpara
+
+//Linha para separar a requisição dos números da primeira matriz da segunda
+escreval ("------------------------------------------------------------------------------")
+
+//Laço de repetição para receber as 3 colunas e as 5 linhas da segunda matriz
+para coluna de 1 ate 3 faca
+   para linha de 1 ate 5 faca
+      escreval ("Digite o valor da posição [", linha, ",", coluna, "] da segunda matriz: ")
+      leia (matriz_2[linha, coluna]) //Recebe a coluna e a linha digitado pelo usuário
+   fimpara
+fimpara
+
+//Linha para separar a requisição dos números da matriz
+escreval ("--------------------------------------------------------------------------------")
+
+//Laços de repetição para amostrar a junção da primeira matriz com a segunda
+//Laço de repetição para mostrar na tela a primeira matriz
+para coluna de 1 ate 3 faca
+   para linha de 1 ate 5 faca
+      escreva (matriz_1[linha, coluna]:6)
+   fimpara
+   escreval
+fimpara
+
+//Laço de repetição para mostrar na tela a segunda matriz
+para coluna de 1 ate 3 faca
+   para linha de 1 ate 5 faca
+      escreva (matriz_2[linha, coluna]:6)
+   fimpara
+   escreval
+fimpara
+
+fimalgoritmo
