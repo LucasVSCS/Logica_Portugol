@@ -1,0 +1,28 @@
+algoritmo "Soma_media_50_70"
+// Função : Mostra na tela a soma dos valores pares entre 50 e 70
+// Autor : Lucas Vinicius
+// Data : 02/10/2017
+// Seção de Declarações
+var
+
+num, cont, soma:inteiro
+
+inicio
+
+cont <-50
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa mostra na tela a soma dos valores pares entre 50 e 70")
+
+//Laço de repetição
+enquanto (cont<=70) faca
+   soma <- soma+cont
+   cont <- cont+2
+fimenquanto
+
+//Saida de dados
+//Mostra na tela a soma dos dos números pares de 50 a 70
+escreval("A soma dos números pares de 50 a 70 é de: ", soma)
+//Mostra na tela a media dos números pares de 50 a 70
+escreval("A media dos números pares de 50 a 70 é de: ", soma/11)
+
+fimalgoritmo
