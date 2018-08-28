@@ -1,0 +1,36 @@
+algoritmo "equacao_2grau"
+// Função : Realiza o calculo de uma equação de segundo grau
+// Autor : Lucas Vinicius
+// Data : 14/11/2017
+
+//Sub-rotina do tipo procedimento para calcular as raizes da equação
+procedimento resultado (a, b , c: real)
+inicio
+//Calcula a primeira raiz
+raiz1 <- ((-b) + raizq(b^2- 4*a*c))/2*a
+   //Calcula a segunda raiz
+   raiz2 <- ((-b) - raizq(b^2- 4*a*c))/2*a
+    //Mostra na tela o resultado
+     escreval ("As raizes da equação são: ", raiz1," e", raiz2)
+fimprocedimento
+
+var
+a, b ,c , raiz1, raiz2: real
+//Programa principal para requisitar os dados e chamar o procedimento
+inicio
+//Mostra na tela a funcionalidade do programa
+escreval ("Este programa realiza o calculo de uma equação de segundo grau")
+escreval
+
+  escreval ("Digite o valor de a: ")
+   //Recebe e armazena o valor de a digitado pelo usuário
+   leia (a)
+     escreval ("Digite o valor de b: ")
+      //Recebe e armazena o valor de b digitado pelo usuário
+      leia (b)
+       escreval ("Digite o valor de c: ")
+        //Recebe e armazena o valor de c digitado pelo usuário
+         leia (c)
+          //Comando para chamar(requisitar) o procedimento
+          resultado(a, b ,c)
+fimalgoritmo
