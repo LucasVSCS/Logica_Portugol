@@ -1,0 +1,41 @@
+Algoritmo "Distributiva"
+// Professor   : Cheli Mendes
+// Descrição   : Propriedade distributiva
+// Autor(a)    : Lucas Vinicius
+// Data atual  : 05/09/2017
+Var
+
+A, B, C, D: real
+
+Inicio
+
+//Mostra na tela a funcionalidade do programa
+escreval ("          Este programa realiza uma propriedade distributiva")
+
+//Entrada de dados
+escreval ("Digite o valor de A: ")
+   leia (A) //Recebe o valor para a primeira variável
+escreval ("Digite o valor de B: ")
+   leia (B) //Recebe o valor para a segunda variável
+escreval ("Digite o valor de C: ")
+   leia (C) //Recebe o valor para a terceira variável
+escreval ("Digite o valor de D: ")
+   leia (D) //Recebe o valor para a quarta variável
+   
+//Processamento e saida de dados
+escreval ("Os resultados das somas foram: ")
+escreval (A+B)
+escreval (A+C)
+escreval (A+D) //Mostra na tela os resultados das somas feita a distributiva
+escreval (B+C)
+escreval (B+D)
+escreval (C+D)
+escreval ("Os resultados das multiplicações foram: ")
+escreval (A*B)
+escreval (A*C)
+escreval (A*D) //Mostra na tela os resultados das multiplicações feita a distributiva
+escreval (B*C)
+escreval (B*D)
+escreval (C*D)
+
+Fimalgoritmo
